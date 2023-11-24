@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Pretendard-medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.commu-insert, .commu-insert * {
+	box-sizing: border-box;
+}
+
+.commu-insert {
+	background: #ffffff;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.commu-insert__section-total {
+	display: flex;
+	flex-direction: row;
+	gap: 0.6120vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: absolute;
+	left: 0.0000vw;
+	top: 0.0000vw;
+	overflow: hidden;
+}
+
+.commu-insert__section-body {
+	flex-shrink: 0;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.commu-insert__body-contents {
+	width: 68.0927vw;
+	height: 58.8542vw;
+	position: absolute;
+	left: 12.1885vw;
+	top: 3.7740vw;
+	overflow: hidden;
+}
+
+.commu-insert__line-2 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 62.4219vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 2.8047vw;
+	top: 41.5125vw;
+}
+
+.commu-insert__group-2 {
+	position: absolute;
+	inset: 0;
+}
+
+.commu-insert__rectangle-2 {
+	cursor: pointer !important;
+	border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.1021vw;
+	width: 17.0333vw;
+	height: 3.3656vw;
+	position: absolute;
+	left: 2.6010vw;
+	top: 2.0401vw;
+	color: #000000;
+	text-align: center;
+	font: 500 1.6318vw "Pretendard-medium", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.commu-insert__ {
+	/*   color: #000000; */
+	/*   text-align: center; */
+	/*   font: 500 1.6318vw "Inter", sans-serif; */
+	/*   position: absolute; */
+	/*   left: calc(50% - 35.4948vw); */
+	/*   top: calc(50% - 24.7849vw); */
+	/*   width: 10.4547vw; */
+	/*   height: 5.8135vw; */
+	/*   display: flex; */
+	/*   align-items: center; */
+	/*   justify-content: center; */
+	
+}
+
+.commu-insert__free-icon-image-8191595-1 {
+	opacity: 0.30000001192092896;
+	width: 5.4568vw;
+	height: 4.3359vw;
+	position: relative;
+	left: 4.6406vw;
+	top: 43.0839vw;
+}
+
+.fileUpload {
+	width: 6.4984vw;
+	height: 4.3359vw;
+	position: absolute;
+	left: 11.9792vw;
+	top: 42.5000vw0.0000vw;
+	border-radius:0.5208vw;
+}
+
+.commu-insert__free-icon-image-8191595-123 {
+	opacity: 3.3;
+	width: 3.6859vw0.0000vw;
+	height: 1.5755vw;
+	position: absolute;
+	left: 5.7865vw;
+	top: 48.0318vw;
+}
+
+.commu-insert__image-1 {
+	width: 2.1927vw;
+	height: 2.1927vw;
+	position: absolute;
+	left: 16.6255vw;
+	top: 2.6010vw;
+}
+
+.commu-insert__rectangle-1 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw;
+	width: 62.4729vw;
+	height: 43.2464vw;
+	position: absolute;
+	left: 2.7542vw;
+	top: 6.6297vw;
+}
+
+.commu-insert__line-1 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 58.3932vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 4.7938vw;
+	top: 13.9734vw;
+}
+
+.commu-insert__2 {
+	color: #b9b9b9;
+	text-align: left;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: absolute;
+	left: 4.7938vw;
+	top: 8.0578vw;
+	width: 57.2917vw;
+	height: 4.4370vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: pre-line;
+	overflow: hidden;
+}
+
+.commu-insert__3 {
+	color: #b9b9b9;
+	text-align: left;
+	font: 500 1.6318vw "Pretendard-medium", sans-serif;
+	position: absolute;
+	left: 4.7938vw;
+	top: 13.9734vw;
+	width: 57.2917vw; /* 텍스트 박스의 너비 */
+	height: 26.0417vw; /* 높이를 자동으로 조정 */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: pre-line;
+	overflow: auto; /* 내용이 너무 길 경우 스크롤바 추가 */
+}
+
+.commu-insert__body-button {
+	display: flex;
+    flex-direction: row;
+    gap: 46.3573vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 2.6042vw;
+    top: 51.0917vw;
+}
+
+.commu-insert__button-exit {
+	cursor: pointer !important;
+	border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #4da385;
+	border-width: 0.1021vw;
+	padding: 0.0000vw 1.0198vw 0.0000vw 1.0198vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 9.4349vw;
+	height: 4.0797vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.commu-insert__4 {
+	color: #4da385;
+	text-align: center;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.commu-insert__button-insert {
+	cursor: pointer !important;
+background: #4da385;
+    border-radius: 0.2552vw;
+    padding: 1.1219vw 3.2130vw 1.1219vw 3.2130vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5099vw;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 10.6250vw;
+    height: 4.0625vw;
+    position: absolute;
+    left: 51.2563vw;
+    top: 0.0021vw;
+    overflow: hidden;
+}
+
+.commu-insert__5 {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: relative;
+	width: 7.3438vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

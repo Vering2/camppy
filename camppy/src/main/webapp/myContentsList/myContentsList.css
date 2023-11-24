@@ -1,0 +1,896 @@
+.likeListBody, .likeListBody * {
+	box-sizing: border-box;
+}
+
+.allbody {
+	
+}
+
+.likeListBody {
+	position: relative;
+	left: 13.3vw;
+	width: 72vw;
+}
+
+.reviewTop {
+	display: flex;
+	flex-direction: row;
+	gap: 0.0000vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	width: 59.8958vw;
+	height: 3.1250vw;
+	position: relative;
+	top: 0.7813vw;
+	left: 19.2708vw;
+	border-bottom: solid;
+	border-width: 0.0521vw;
+	margin-bottom: 1.0417vw;
+	transform: scale(1.2);
+}
+
+.reviewCount {
+	color: #000000;
+	text-align: left;
+	font: 400 1.0198vw/1.3771vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 0.5208vw;
+	top: 1.5625vw;
+	width: 6.1198vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.selectAll {
+	width: 4.6875vw;
+	height: 1.3021vw;
+	position: absolute;
+	left: 55.2vw;
+	top: 1.6667vw;
+}
+
+.selectDel {
+	background: #4da285;
+	border-radius: 0.3109vw;
+	flex-shrink: 0;
+	width: 3.9063vw;
+	height: 1.3021vw;
+	position: absolute;
+	left: 51vw;
+	top: 1.5625vw;
+	color: #ffffff;
+	text-align: center;
+	font: "NanumGothic", sans-serif;
+}
+
+.allCheck {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	height: 2.5000vw;
+	display: flex;
+	left: 79.5vw;
+	width: 10vw;
+	top: 3vw;
+}
+
+.likeList {
+	position: relative;
+	height: 14vw;
+	border-bottom: solid;
+	border-width: thin;
+	width: 72vw;
+}
+
+.likeList2 {
+	width: 72vw;
+	height: 0vw;
+	border-bottom: solid;
+	border-width: thin;
+	left: 13.3vw;
+	position: relative;
+}
+
+.likeListPhoto {
+	background: #d9d9d9;
+	flex-shrink: 0;
+	width: 15.5000vw;
+	height: 12.5000vw;
+	position: relative;
+	left: 0vw;
+	top: 1vw;
+	margin-bottom: 0.5vw;
+}
+
+.likeListTitle {
+	color: #000000;
+	text-align: left;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	left: 17vw;
+	top: -11.5vw;
+	width: 46.8750vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.likeListAdd {
+	color: #000000;
+	text-align: left;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	left: 17vw;
+	top: -12vw;
+	width: 46.8750vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 46.8750vw;
+}
+
+.likeListTag {
+	color: #000000;
+	text-align: left;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	left: 17vw;
+	top: -11vw;
+	width: 46.8750vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.likeListTell {
+	color: #000000;
+	text-align: left;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	left: 14.5vw;
+	width: 46.8750vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.likeTitle {
+	color: #000000;
+	font: 400 1.3021vw/2.3436vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 17vw;
+	top: 11vw;
+}
+
+.hearts {
+	position: absolute;
+	width: 2vw;
+	padding-top: 0.2vw;
+	left: 17vw;
+	top: 10.3vw;
+	width: 2vw;
+}
+
+.likeNum {
+	color: #000000;
+	font: 400 1.3021vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	left: 20vw;
+	top: -9.7vw;
+	width: 5vw;
+}
+
+.each {
+	border-radius: 0.0000vw;
+	flex-shrink: 0;
+	position: absolute;
+	right: 0.0000vw;
+	top: 4.3750vw;
+	overflow: visible;
+}
+
+.eachCheck {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
+	position: relative;
+	height: 1vw;
+	width: 1vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 70.9vw;
+	top: -16vw;
+}
+
+.eachCheckbox {
+	width: 0.8125vw;
+	height: 0.8125vw;
+}
+
+.bannerRsButton {
+	color: #ffffff;
+	font: 700 0.6915vw "Inter", sans-serif;
+	text-align: center;
+	background: #4da385;
+	border-radius: 0.2660vw;
+	flex-direction: row;
+	gap: 0.0000vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 4.9468vw;
+	height: 1.7553vw;
+	position: absolute;
+	left: 72.5vw;
+	top: 17vw;
+}
+
+.mypageProfile {
+	padding: 0.5208vw 5.2083vw 0.5208vw 5.2083vw;
+	display: flex;
+	flex-direction: row;
+	gap: 7.0833vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 83.0000vw;
+	height: 16.3542vw;
+	position: relative;
+	left: 0.0521vw;
+	overflow: hidden;
+}
+
+.mypageUserIcon {
+	flex-shrink: 0;
+	width: 11.3021vw;
+	height: 11.3021vw;
+	position: absolute;
+	left: 14.4271vw;
+	top: 2.6563vw;
+}
+
+.profileNickname {
+	color: #000000;
+	text-align: left;
+	font: 400 2.0833vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 28.4375vw;
+	top: 3.9063vw;
+	width: 33.4375vw;
+	height: 4.1667vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.updateButton {
+	background: #4da385;
+	border-radius: 0.2604vw;
+	padding: 0.0000vw 0.4688vw 0.0000vw 0.4688vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5208vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	width: 10.7813vw;
+	height: 3.6458vw;
+	position: absolute;
+	left: 65.5208vw;
+	top: 4.1667vw;
+	overflow: hidden;
+	border: none;
+}
+
+.updateProfile {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: calc(50% - 4.9219vw);
+	top: 0.0000vw;
+	width: 9.8438vw;
+	height: 3.6458vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageProfileNum {
+	display: flex;
+	flex-direction: row;
+	gap: 7.0833vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	width: 54.1667vw;
+	height: 3.6458vw;
+	position: absolute;
+	left: 7.0313vw;
+	top: 8.3333vw;
+}
+
+.myVisit {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 0.0000vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.visitNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 9.3750vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.myArticle {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 18.7500vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.myArticleNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 28.1250vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.myReply {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 37.5000vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.myReplyNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: 46.8750vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.mypageNavi {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0521vw 0.0000vw 0.0521vw 0.0000vw;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5625vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 100.0000vw;
+	height: 8.4896vw;
+	position: relative;
+	/*   left: calc(50% - 50.0000vw); */
+	padding-right: 7.8125vw;
+	padding-left: 7.8125vw;
+}
+
+.mypageLike {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageArticle {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageReply {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageReserve {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* .buttonDel { */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* 	gap: 0.0000vw; */
+/* 	align-items: flex-start; */
+/* 	justify-content: flex-start; */
+/* 	width: 7.1875vw; */
+/* 	height: 3.1771vw; */
+/* 	position: relative; */
+/* 	left: 80.9896vw; */
+/* 	background: #4da385; */
+/* 	border-radius: 0.2604vw; */
+/* 	border: none; */
+/* } */
+.del {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.3021vw/2.3438vw "NanumGothic", sans-serif;
+	position: absolute;
+	left: calc(50% - 2.5521vw);
+	top: 0.6771vw;
+	width: 5.2083vw;
+	height: 1.5625vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.tab.active {
+	color: black;
+	font-weight: bold;
+}
+
+.mypageNavi {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0521vw 0.0000vw 0.0521vw 0.0000vw;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5625vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 100.0000vw;
+	height: 8.4896vw;
+	position: relative;
+	/*   left: calc(50% - 50.0000vw); */
+	padding-right: 7.8125vw;
+	padding-left: 7.8125vw;
+}
+
+.tab_1 {
+	color: grey;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "NanumGothic", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tabContents {
+	margin-top: 1.0417vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src:
+		url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	background: none;
+}
+
+.mypageUserIcon {
+	flex-shrink: 0;
+	width: 11.3021vw;
+	height: 11.3021vw;
+	position: absolute;
+	left: 14.4271vw;
+	top: 2.6563vw;
+}
+
+.profileNickname {
+	color: #000000;
+	text-align: left;
+	font: 400 2.0833vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 28.4375vw;
+	top: 3.9063vw;
+	width: 33.4375vw;
+	height: 4.1667vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.updateButton {
+	background: #4da385;
+	border-radius: 0.2604vw;
+	padding: 0.0000vw 0.4688vw 0.0000vw 0.4688vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5208vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	width: 10.7813vw;
+	height: 3.6458vw;
+	position: absolute;
+	left: 65.5208vw;
+	top: 4.1667vw;
+	overflow: hidden;
+	border: none;
+}
+
+.updateProfile {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: calc(50% - 4.9219vw);
+	top: 0.0000vw;
+	width: 9.8438vw;
+	height: 3.6458vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageProfileNum {
+	display: flex;
+	flex-direction: row;
+	gap: 7.0833vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-shrink: 0;
+	width: 54.1667vw;
+	height: 3.6458vw;
+	position: absolute;
+	left: 7.0313vw;
+	top: 8.3333vw;
+}
+
+.myVisit {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 0.0000vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.visitNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 9.3750vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.myArticle {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 18.7500vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.myArticleNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 28.1250vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.myReply {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 37.5000vw;
+	top: 0.5208vw;
+	width: 9.3750vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.myReplyNum {
+	color: #000000;
+	text-align: center;
+	font: 400 1.3021vw/1.4583vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 46.8750vw;
+	top: 0.5208vw;
+	width: 5.2083vw;
+	height: 2.6042vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: solid 0.0521vw;
+	border-left-color: grey;
+}
+
+.mypageNavi {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0521vw 0.0000vw 0.0521vw 0.0000vw;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5625vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 100.0000vw;
+	height: 8.4896vw;
+	position: relative;
+	/*   left: calc(50% - 50.0000vw); */
+	padding-right: 7.8125vw;
+	padding-left: 7.8125vw;
+}
+
+.mypageLike {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageArticle {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageReply {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mypageReserve {
+	color: #000000;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: relative;
+	width: 19.7917vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* .buttonDel { */
+/* 	display: flex; */
+/* 	flex-direction: column; */
+/* 	gap: 0.0000vw; */
+/* 	align-items: flex-start; */
+/* 	justify-content: flex-start; */
+/* 	width: 7.1875vw; */
+/* 	height: 3.1771vw; */
+/* 	position: relative; */
+/* 	left: 80.9896vw; */
+/* 	background: #4da385; */
+/* 	border-radius: 0.2604vw; */
+/* 	border: none; */
+/* } */
+.del {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.3021vw/2.3438vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: calc(50% - 2.5521vw);
+	top: 0.6771vw;
+	width: 5.2083vw;
+	height: 1.5625vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.tab.active {
+	color: black;
+	font-weight: bold;
+}
+
+.mypageNavi {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0521vw 0.0000vw 0.0521vw 0.0000vw;
+	display: flex;
+	flex-direction: row;
+	gap: 1.5625vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 83vw;
+	height: 8.4896vw;
+	position: relative;
+	/*   left: calc(50% - 50.0000vw); */
+	padding-right: 7.8125vw;
+	padding-left: 7.8125vw;
+}
+
+.tab {
+	color: grey;
+	text-align: center;
+	font: 400 1.5625vw/1.4583vw "pretendard-medium", sans-serif;
+	position: relative;
+	width: 19vw;
+	height: 8.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tabContents {
+	margin-top: 1.0417vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.pagination {
+	display: contents;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1.0417vw;
+	left: 48.9583vw;
+}
+
+.pagination a {
+	text-decoration: none;
+	padding: 0.4167vw 0.8333vw;
+	margin: 0 0.2083vw;
+	border: 0.0521vw solid #ccc;
+	border-radius: 0.2083vw;
+	color: #333;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active {
+	background-color: #4da285;
+	color: white;
+}
+
+.pagination a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#tab2 {
+	color: lightseagreen;
+}

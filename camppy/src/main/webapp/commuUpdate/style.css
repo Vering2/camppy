@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Pretendard-medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.commu-update, .commu-update * {
+	box-sizing: border-box;
+}
+
+.commu-update {
+	background: #ffffff;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-total {
+	display: flex;
+	flex-direction: row;
+	gap: 0.6120vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: absolute;
+	left: 0.0000vw;
+	top: 0.0000vw;
+	overflow: hidden;
+}
+
+.section-body {
+	flex-shrink: 0;
+	width: 97.9167vw;
+	height: 71.3974vw;
+	position: relative;
+	overflow: hidden;
+}
+
+.body-contents {
+	width: 72.5198vw;
+	height: 51.2021vw;
+	position: absolute;
+	left: 12.1885vw;
+	top: 3.7740vw;
+	overflow: hidden;
+}
+
+.line-2 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 62.4219vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 2.8047vw;
+	top: 41.5125vw;
+}
+
+.group-2 {
+	position: absolute;
+	inset: 0;
+}
+
+.rectangle-2 {
+	cursor: pointer !important;
+border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.1021vw;
+	width: 17.0333vw;
+	height: 3.3656vw;
+	position: absolute;
+	left: 2.6010vw;
+	top: 2.0401vw;
+	color: #000000;
+	text-align: center;
+	font: 500 1.6318vw "Pretendard-medium", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.free-icon-image-8191595-1 {
+	opacity: 0.30000001192092896;
+	width: 5.4568vw;
+	height: 4.2839vw;
+	position: absolute;
+	left: 4.6406vw;
+	top: 43.5526vw;
+}
+
+
+
+.image-1 {
+	width: 2.1927vw;
+	height: 2.1927vw;
+	position: absolute;
+	left: 16.6255vw;
+	top: 2.6010vw;
+}
+
+.rectangle-1 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw;
+	width: 62.4729vw;
+	height: 43.2464vw;
+	position: absolute;
+	left: 2.7542vw;
+	top: 6.6297vw;
+}
+
+.line-1 {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 58.3932vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 4.7938vw;
+	top: 13.9734vw;
+}
+
+._2 {
+	color: #b9b9b9;
+	text-align: left;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: absolute;
+	left: 4.7938vw;
+	top: 8.0578vw;
+	width: 57.2917vw;
+	height: 4.4370vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: pre-line;
+	overflow: hidden;
+}
+
+.bb {
+color: #b9b9b9;
+	text-align: left;
+	font: 500 1.6318vw "Pretendard-medium", sans-serif;
+	position: absolute;
+	left: 4.7938vw;
+	top: 14.9734vw;
+	width: 57.2917vw; /* 텍스트 박스의 너비 */
+	height: 26.0417vw; /* 높이를 자동으로 조정 */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	white-space: pre-line;
+	overflow: auto; /* 내용이 너무 길 경우 스크롤바 추가 */
+
+}
+
+.body-button {
+	display: flex;
+	flex-direction: row;
+	gap: 46.3573vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: absolute;
+	left: 14.9938vw;
+	top: 56.4042vw;
+}
+
+.button-exit {
+	cursor: pointer !important;
+	border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #4da385;
+	border-width: 0.1021vw;
+	padding: 0.0000vw 1.0198vw 0.0000vw 1.0198vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 9.4349vw;
+	height: 4.0797vw;
+	position: relative;
+	overflow: hidden;
+}
+
+._3 {
+	color: #4da385;
+	text-align: center;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-insert {
+	cursor: pointer !important;
+	background: #4da385;
+	border-radius: 0.2552vw;
+	padding: 1.1219vw 3.2130vw 1.1219vw 3.2130vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 11.9792vw;
+	height: 4.0625vw;
+	position: absolute;
+	left: 50.6833vw;
+	top: 0.0021vw;
+	overflow: hidden;
+}
+
+._4 {
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.6318vw "Pretendard-medium", sans-serif;
+	position: relative;
+	width: 6.9792vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
