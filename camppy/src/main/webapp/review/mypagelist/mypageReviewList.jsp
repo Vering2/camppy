@@ -31,22 +31,24 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 
 <body>
 
-<!--  헤더 -->
-<jsp:include page="/inc/top.jsp"></jsp:include>
-<!--  헤더 -->
-<!-- 프로필 부분 -->
-<%
-String id = (String) session.getAttribute("id");
-MemberDTO memberDTO = new MemberDTO();
-MemberDAO memberDAO = new MemberDAO();
-memberDTO = memberDAO.getMember(id);
-String nickname=(String)session.getAttribute("nickname");
-int memberid= (int)session.getAttribute("memberid");
-CommuDAO commuDAO = new CommuDAO();%>
-<div class="mypageProfile">
-		<img class="mypageUserIcon" src="memberimg/<%=memberDTO.getMember_img() %>" />
-		<div class="profileNickname"><%=nickname %></div>
-<button type="button"
+	<!--  헤더 -->
+	<jsp:include page="/inc/top.jsp"></jsp:include>
+	<!--  헤더 -->
+	<!-- 프로필 부분 -->
+	<%
+	String id = (String) session.getAttribute("id");
+	MemberDTO memberDTO = new MemberDTO();
+	MemberDAO memberDAO = new MemberDAO();
+	memberDTO = memberDAO.getMember(id);
+	String nickname = (String) session.getAttribute("nickname");
+	int memberid = (int) session.getAttribute("memberid");
+	CommuDAO commuDAO = new CommuDAO();
+	%>
+	<div class="mypageProfile">
+		<img class="mypageUserIcon"
+			src="memberimg/<%=memberDTO.getMember_img()%>" />
+		<div class="profileNickname"><%=nickname%></div>
+		<button type="button"
 			onclick="openCenteredPopup('update.me', 'ReviewPopup', 850, 650)"
 			class="updateButton">
 			<div class="updateProfile">프로필수정</div>
@@ -55,18 +57,22 @@ CommuDAO commuDAO = new CommuDAO();%>
 			<div class="myArticle">작성글</div>
 			<div class="myArticleNum"><%=commuDAO.myCountids(memberid)%></div>
 			<div class="myReply">댓글</div>
-			<div class="myReplyNum"><%=commuDAO.myCountrv(memberid) %></div>
+			<div class="myReplyNum"><%=commuDAO.myCountrv(memberid)%></div>
 		</div>
 	</div>
 	<div class="mypageNavi">
-		<div class="tab" id="tab1" onclick="location.href='likeList.my'" >찜 리스트</div>
-		<div class="tab" id="tab2" onclick="location.href='myContentsList.commu'">작성한 글</div>
-		<div class="tab" id="tab3" onclick="location.href='mypageReviewList.rv'">작성 리뷰</div>
-		<div class="tab" id="tab4" onclick="location.href='mypage_reserve.re'">예약 내역</div>
+		<div class="tab" id="tab1" onclick="location.href='likeList.my'">찜
+			리스트</div>
+		<div class="tab" id="tab2"
+			onclick="location.href='myContentsList.commu'">작성한 글</div>
+		<div class="tab" id="tab3"
+			onclick="location.href='mypageReviewList.rv'">작성 리뷰</div>
+		<div class="tab" id="tab4" onclick="location.href='mypage_reserve.re'">예약
+			내역</div>
 	</div>
-	
 
-<!-- 프로필 부분 -->
+
+	<!-- 프로필 부분 -->
 
 
 
@@ -116,10 +122,10 @@ ResultSet rs = pstmt.executeQuery();
 %>
 
 	<%
-// 5단계: while 행 접근 -> 데이터 있으면 true 
-// -> 글번호 글쓴이 제목 조회수 글쓴날짜 출력 
-while (rs.next()) {
-%>
+	// 5단계: while 행 접근 -> 데이터 있으면 true 
+	// -> 글번호 글쓴이 제목 조회수 글쓴날짜 출력 
+	while (rs.next()) {
+	%>
 
 	<div class="campinfoRow" data-review-id="<%=rs.getInt("review_id")%>">
 		<div class="campinfoStar">
@@ -166,36 +172,35 @@ while (rs.next()) {
 %>
 
 
-<!-- 페이징 링크 출력 부분 -->
-				<div class="pagination">
-					<%
-					if (currentPage > 1) {
-					%>
-					<a href="?page=<%=currentPage - 1%>">이전</a>
-					<%
-					}
+	<!-- 페이징 링크 출력 부분 -->
+	<div class="pagination">
+		<%
+		if (currentPage > 1) {
+		%>
+		<a href="?page=<%=currentPage - 1%>">이전</a>
+		<%
+		}
 
-					for (int i = 1; i <= totalPages; i++) {
-					%>
-					<a href="?page=<%=i%>"
-						class="<%=(i == currentPage) ? "active" : ""%>"><%=i%></a>
-					<%
-					}
+		for (int i = 1; i <= totalPages; i++) {
+		%>
+		<a href="?page=<%=i%>" class="<%=(i == currentPage) ? "active" : ""%>"><%=i%></a>
+		<%
+		}
 
-					if (currentPage < totalPages) {
-					%>
-					<a href="?page=<%=currentPage + 1%>">다음</a>
-					<%
-					}
-					%>
+		if (currentPage < totalPages) {
+		%>
+		<a href="?page=<%=currentPage + 1%>">다음</a>
+		<%
+		}
+		%>
 
-				</div>
+	</div>
 
 
-<!-- 푸터 -->
-<jsp:include page="/inc/bottom.jsp"></jsp:include>
+	<!-- 푸터 -->
+	<jsp:include page="/inc/bottom.jsp"></jsp:include>
 
-<!-- 푸터 -->
+	<!-- 푸터 -->
 
 
 
@@ -344,39 +349,39 @@ while (rs.next()) {
 		}
 
 		$(document).ready(function() {
-		    // 전체선택 체크박스 클릭 시
-		    $("#cboxAll").on("click", function() {
-		        $("input:checkbox[name=cbox]").prop("checked", this.checked);
-		    });
+			// 전체선택 체크박스 클릭 시
+			$("#cboxAll").on("click", function() {
+				$("input:checkbox[name=cbox]").prop("checked", this.checked);
+			});
 
-		    // 개별 체크박스 클릭 시
-		    $(document).on("click", "input:checkbox[name=cbox]", function(e) {
-		        var chks = document.getElementsByName("cbox");
-		        var chksChecked = 0;
+			// 개별 체크박스 클릭 시
+			$(document).on("click", "input:checkbox[name=cbox]", function(e) {
+				var chks = document.getElementsByName("cbox");
+				var chksChecked = 0;
 
-		        for (var i = 0; i < chks.length; i++) {
-		            var cbox = chks[i];
+				for (var i = 0; i < chks.length; i++) {
+					var cbox = chks[i];
 
-		            if (cbox.checked) {
-		                chksChecked++;
-		            }
-		        }
-		        if (chks.length == chksChecked) {
-		            $("#cboxAll").prop("checked", true);
-		        } else {
-		            $("#cboxAll").prop("checked", false);
-		        }
-		    });
-		    
-		    // 전체선택 체크박스 상태 변경 시
-		    $(document).on("change", "#cboxAll", function() {
-		        var chks = document.getElementsByName("cbox");
+					if (cbox.checked) {
+						chksChecked++;
+					}
+				}
+				if (chks.length == chksChecked) {
+					$("#cboxAll").prop("checked", true);
+				} else {
+					$("#cboxAll").prop("checked", false);
+				}
+			});
 
-		        for (var i = 0; i < chks.length; i++) {
-		            var cbox = chks[i];
-		            cbox.checked = this.checked;
-		        }
-		    });
+			// 전체선택 체크박스 상태 변경 시
+			$(document).on("change", "#cboxAll", function() {
+				var chks = document.getElementsByName("cbox");
+
+				for (var i = 0; i < chks.length; i++) {
+					var cbox = chks[i];
+					cbox.checked = this.checked;
+				}
+			});
 		});
 		//선택삭제
 		function selectedDel() {

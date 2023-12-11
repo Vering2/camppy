@@ -74,8 +74,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 						<textarea class="commu-insert__3" placeholder="문의 내용을 입력해 주세요."
 							name="content"></textarea>
 
-						<label class="input-file-button" for="image-upload"> 
-						<img
+						<label class="input-file-button" for="image-upload"> <img
 							class="commu-insert__free-icon-image-8191595-1"
 							src="./commuInsert/free-icon-image-8191595-1.png" alt="이미지">
 						</label> <input type="file" name="uploadFile" id="image-upload"

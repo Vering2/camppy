@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Pretendard-medium';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Pretendard-medium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
-
-
 
 .commu-update, .commu-update * {
 	box-sizing: border-box;
@@ -76,7 +76,7 @@
 
 .rectangle-2 {
 	cursor: pointer !important;
-border-radius: 0.2552vw;
+	border-radius: 0.2552vw;
 	border-style: solid;
 	border-color: #000000;
 	border-width: 0.1021vw;
@@ -93,7 +93,6 @@ border-radius: 0.2552vw;
 	justify-content: center;
 }
 
-
 .free-icon-image-8191595-1 {
 	opacity: 0.30000001192092896;
 	width: 5.4568vw;
@@ -102,8 +101,6 @@ border-radius: 0.2552vw;
 	left: 4.6406vw;
 	top: 43.5526vw;
 }
-
-
 
 .image-1 {
 	width: 2.1927vw;
@@ -152,7 +149,7 @@ border-radius: 0.2552vw;
 }
 
 .bb {
-color: #b9b9b9;
+	color: #b9b9b9;
 	text-align: left;
 	font: 500 1.6318vw "Pretendard-medium", sans-serif;
 	position: absolute;
@@ -165,7 +162,6 @@ color: #b9b9b9;
 	justify-content: flex-start;
 	white-space: pre-line;
 	overflow: auto; /* 내용이 너무 길 경우 스크롤바 추가 */
-
 }
 
 .body-button {

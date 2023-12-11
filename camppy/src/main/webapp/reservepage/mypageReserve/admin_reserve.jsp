@@ -1,103 +1,98 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.List"%>
-<%@ page import="java.util.Date" %>
+<%@ page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="camppy.reserve.dao.ReserveDetailDTO" %>
-<%@ page import="camppy.reserve.dao.ReserveDetailDAO" %>
-<%@ page import="camppy.main.action.CampRegDAO" %>
-<%@ page import="camppy.main.action.CampRegDTO" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="camppy.reserve.dao.MyReserveDTO" %>
-<%@ page import="camppy.reserve.dao.PageDTO" %>
-<%@ page import="camppy.reserve.dao.MyReserveDAO" %>
-<%@ page import="camppy.reserve.action.ReserveService" %>
-<%@ page import="camppy.reserve.action.ReserveController" %>
+	pageEncoding="UTF-8"%>
+<%@ page import="camppy.reserve.dao.ReserveDetailDTO"%>
+<%@ page import="camppy.reserve.dao.ReserveDetailDAO"%>
+<%@ page import="camppy.main.action.CampRegDAO"%>
+<%@ page import="camppy.main.action.CampRegDTO"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="camppy.reserve.dao.MyReserveDTO"%>
+<%@ page import="camppy.reserve.dao.PageDTO"%>
+<%@ page import="camppy.reserve.dao.MyReserveDAO"%>
+<%@ page import="camppy.reserve.action.ReserveService"%>
+<%@ page import="camppy.reserve.action.ReserveController"%>
 <%-- <%@ page import="camppy.main.action.CampRegDTO" %> --%>
 <%-- <%@ page import="camppy.main.action.CampRegDAO" %> --%>
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 <title>Camppy</title>
 <style type="text/css">
-#sidebar{
-   width: 250px; 
-   height: 700px;   
-   float: left;
+#sidebar {
+	width: 250px;
+	height: 700px;
+	float: left;
 }
-.art{
- 	font-family: 'NanumSquareNeo';
-    width: 600px;
-    height: 600px;
-  	padding-left: 50px;
-/*     margin-bottom: 300px; */
-    margin-left: 200;
- 
+
+.art {
+	font-family: 'NanumSquareNeo';
+	width: 600px;
+	height: 600px;
+	padding-left: 50px;
+	/*     margin-bottom: 300px; */
+	margin-left: 200;
 }
-.table thead.thead-primary{
+
+.table thead.thead-primary {
 	background: #99b19c;
 	font-weight: bold;
-	color: #FFFFFF;	
-}
-.heading-section {
-    font-size: 28px;
-    color: #393939;
-	height: 30px;
-    font-weight: 400;
-    font-family: "Poppins", Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 195px
-     
-}
-.table td.a{
-color: #22741C;
-font-weight: bold;
+	color: #FFFFFF;
 }
 
-.table td.buttuon:hover{
-background-color: #333;
+.heading-section {
+	font-size: 28px;
+	color: #393939;
+	height: 30px;
+	font-weight: 400;
+	font-family: "Poppins", Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	left: 195px
+}
+
+.table td.a {
+	color: #22741C;
+	font-weight: bold;
+}
+
+.table td.buttuon:hover {
+	background-color: #333;
 	color: #fff;
 }
-.count{
-float: right;
-position: relative;
-left: 400px;	
-}
-.res{
-height: 150px;
-position: relative; 
-left: 400px;
+
+.count {
+	float: right;
+	position: relative;
+	left: 400px;
 }
 
-	  a,
-      button,
-      input,
-      select,
-      h1,
-      h2,
-      
-      h4,
-      h5,
-      * {
-        margin: 0;
-        padding: 0;
-        border: none;
-        text-decoration: none;
-        appearance: none; 
-        background: none;
-      }
-       table {
-    /* width: 400px;
+.res {
+	height: 150px;
+	position: relative;
+	left: 400px;
+}
+
+a, button, input, select, h1, h2, h4, h5, * {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	appearance: none;
+	background: none;
+}
+
+table {
+	/* width: 400px;
     height: 200px; */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
-  .mypageProfile {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mypageProfile {
 	padding: 10px 100px 10px 100px;
 	display: flex;
 	flex-direction: row;
@@ -402,7 +397,7 @@ div.tab.active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	left : 750px
+	left: 750px
 }
 
 .tabContents {
@@ -413,10 +408,10 @@ div.tab.active {
 	align-items: center;
 }
 
-
-  #tab4 {
+#tab4 {
 	color: lightseagreen;
 }
+
 .pagination {
 	display: flex;
 	justify-content: center;
@@ -424,8 +419,7 @@ div.tab.active {
 	margin: 1.5vw;
 	top: 7vw;
 	left: 31vw;
-	position:relative;
-	
+	position: relative;
 }
 
 .pagination a {
@@ -445,205 +439,206 @@ div.tab.active {
 	color: white;
 }
 
-
 .pagination a:hover {
 	background-color: #333;
 	color: #fff;
 }
+
 .table {
-     position: relative;
-    left: 471px;
-    transform: scale(1.4,1.4);
-    top: 55px;
-    line-height: 190%;
-    letter-spacing: -1.5px;
-    width: 810px;
-    text-align: center;
+	position: relative;
+	left: 471px;
+	transform: scale(1.4, 1.4);
+	top: 55px;
+	line-height: 190%;
+	letter-spacing: -1.5px;
+	width: 810px;
+	text-align: center;
 }
 
 .btn btn-outline-success:hover { /* a태그에 마우스를 올렸을 때 */
-  color:red;
-  cursor: pointer; 
+	color: red;
+	cursor: pointer;
 }
+
 .btn btn-outline-secondary:hover { /* a태그에 마우스를 올렸을 때 */
-  color:red;
-  cursor: pointer; 
+	color: red;
+	cursor: pointer;
 }
 </style>
 </head>
 <body>
 
 
-<!-- 헤더들어가는 곳 -->
-	<jsp:include page="/inc/top.jsp"/>
-<!-- 헤더들어가는 곳 -->
+	<!-- 헤더들어가는 곳 -->
+	<jsp:include page="/inc/top.jsp" />
+	<!-- 헤더들어가는 곳 -->
 
-<%String nickname=(String)session.getAttribute("nickname"); %>
+	<%
+	String nickname = (String) session.getAttribute("nickname");
+	%>
 
-<div class="tab" id="tab4" onclick="location.href='admin_reserve.re'">회원 예약 내역</div>
-
-
-<%
- String id=(String)session.getAttribute("id"); //id 세션값 불러오기 
-
+	<div class="tab" id="tab4" onclick="location.href='admin_reserve.re'">회원
+		예약 내역</div>
 
 
-int startPage=(Integer)request.getAttribute("startPage");
-int pageBlock=(Integer)request.getAttribute("pageBlock");
-int endPage=(Integer)request.getAttribute("endPage");
-int pageCount=(Integer)request.getAttribute("pageCount");
-	
-PageDTO pageDTO=(PageDTO)request.getAttribute("pageDTO");
+	<%
+	String id = (String) session.getAttribute("id"); //id 세션값 불러오기 
 
-	List<ReserveDetailDTO> reserveList=(List<ReserveDetailDTO>)request.getAttribute("reserveList");
-  SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy.MM.dd");	
-%>
-		
+	int startPage = (Integer) request.getAttribute("startPage");
+	int pageBlock = (Integer) request.getAttribute("pageBlock");
+	int endPage = (Integer) request.getAttribute("endPage");
+	int pageCount = (Integer) request.getAttribute("pageCount");
 
-<div id="wrap">
- <article class="art">	
-  
-	<div><table class="table">
-	<thead class="thead-primary"> 
-<!-- 	 로그인한 사용자의 예약 리스트와 예약취소 --> 
- 	<tr><td> 예약번호 </td><td> 펜션명 </td><td> 예약상태 </td> 
- 	<td> 예약일자 </td><td>총 금액</td><td>완료</td><td> 취소 </td></tr> 
- 	</thead>
- 	<% 
-//  	SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
- 	for(int i=0;i<reserveList.size();i++){
- 		//배열 한칸에 내용 가져오기 
- 		ReserveDetailDTO rdto=reserveList.get(i);
-//  		MyReserveDTO mdto = new MyReserveDTO();
- 
-//  		CampRegDAO cdao = new CampRegDAO();
-//  		CampRegDTO cdto = new CampRegDTO();
- 		%> 
- 	<tr><td onclick="location.href='DetailList.re?res_id=<%=rdto.getRes_id()%>'"><%=rdto.getRes_id()%> </td>
- 	
-	    <td> <%=rdto.getCamp_name()%> </td>
-	        <td class="a"> <% 
-	    if(rdto.getRes_status()==0){
- 	    	out.print("입금대기"); 	    
- 	    }else if(rdto.getRes_status()==1){
- 	    	out.print("예약완료");
-  	    }%> </td>
-	    <td> <%=dateFormat.format(rdto.getRes_time()) %> </td>
-	    <td>
-	    
-	     
-	     <script type="text/javascript">
-          var num = <%=rdto.getSprice()%>;
-          document.write(num.toLocaleString()+"원");
-         </script>
- 	
+	PageDTO pageDTO = (PageDTO) request.getAttribute("pageDTO");
 
-         <%
-%>
-<% 
+	List<ReserveDetailDTO> reserveList = (List<ReserveDetailDTO>) request.getAttribute("reserveList");
+	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.MM.dd");
+	%>
 
-// int campPrice = rdto.getCamp_price();
-%>
-<%-- <%= campPrice %>박 --%>
-<!--  int campPrice = rdto.getCamp_price()/rdto.getCamp_price(); -->
-<!--   if (campPrice != 0) { -->
-<!--       out.print(campPrice + "박"); -->
-<!--   } else { -->
-<!--       out.print("박"); -->
-<!--   } -->
-<%
+
+	<div id="wrap">
+		<article class="art">
+
+			<div>
+				<table class="table">
+					<thead class="thead-primary">
+						<!-- 	 로그인한 사용자의 예약 리스트와 예약취소 -->
+						<tr>
+							<td>예약번호</td>
+							<td>펜션명</td>
+							<td>예약상태</td>
+							<td>예약일자</td>
+							<td>총 금액</td>
+							<td>완료</td>
+							<td>취소</td>
+						</tr>
+					</thead>
+					<%
+					//  	SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+					for (int i = 0; i < reserveList.size(); i++) {
+						//배열 한칸에 내용 가져오기 
+						ReserveDetailDTO rdto = reserveList.get(i);
+						//  		MyReserveDTO mdto = new MyReserveDTO();
+
+						//  		CampRegDAO cdao = new CampRegDAO();
+						//  		CampRegDTO cdto = new CampRegDTO();
+					%>
+					<tr>
+						<td
+							onclick="location.href='DetailList.re?res_id=<%=rdto.getRes_id()%>'"><%=rdto.getRes_id()%>
+						</td>
+
+						<td><%=rdto.getCamp_name()%></td>
+						<td class="a">
+							<%
+							if (rdto.getRes_status() == 0) {
+								out.print("입금대기");
+							} else if (rdto.getRes_status() == 1) {
+								out.print("예약완료");
+							}
+							%>
+						</td>
+						<td><%=dateFormat.format(rdto.getRes_time())%></td>
+						<td><script type="text/javascript">
+							var num =
+						<%=rdto.getSprice()%>
+							;
+							document.write(num.toLocaleString() + "원");
+						</script> <%
+%> <%
+ // int campPrice = rdto.getCamp_price();
+ %> <%-- <%= campPrice %>박 --%> <!--  int campPrice = rdto.getCamp_price()/rdto.getCamp_price(); -->
+							<!--   if (campPrice != 0) { --> <!--       out.print(campPrice + "박"); -->
+							<!--   } else { --> <!--       out.print("박"); --> <!--   } --> <%
 // int campPrice = rdto.getCamp_price();
 // int sprice = rdto.getSprice();
 // String result = campPrice == 0 ? "박" : (sprice / campPrice) + "박";
+%> <%-- <%= result %> --%> <%=rdto.getSprice() / rdto.getCamp_price()%>박 <%-- 			  <%=rdto.getCamp_price()%>박 --%>
+
+						</td>
+
+
+						<%-- 		<td><button type="button" id="reviewBtn" class="btn btn-outline-success" onclick="location.href='insertReview.rv?res_id=<%=rdto.getRes_id()%>&camp_id=<%=rdto.getCamp_id()%>'">리뷰 작성</button></td> --%>
+
+						<td>
+							<button type="button" class="btn btn-outline-success"
+								onclick="location.href='resstch.re?res_id=<%=rdto.getRes_id()%>'">완료</button>
+						</td>
+
+						<td><button type="button" class="btn btn-outline-secondary"
+								onclick="location.href='admindelete.re?res_id=<%=rdto.getRes_id()%>'">취소</button></td>
+					</tr>
+					<%
+					}
+					%>
+
+				</table>
+			</div>
+			<!-- <h1>page</h1> -->
+			<%
+			if (startPage > pageBlock) {
+			%>
+			<a href="admin_reserve.re?pageNum=<%=startPage - pageBlock%>">[10페이지
+				이전]</a>
+			<%
+			}
+			%>
+			<div class="pagination">
+				<%
+				for (int i = startPage; i <= endPage; i++) {
+				%>
+
+				<a href="admin_reserve.re?pageNum=<%=i%>"><%=i%></a>
+				<%
+				}
+				%>
+			</div>
+			<%
+			// 10페이지 다음
+			if (endPage < pageCount) {
+			%>
+			<a href="admin_reserve.re?pageNum=<%=startPage + pageBlock%>">[10페이지
+				다음]</a>
+			<%
+			}
+			%>
+
+
+
+
+
+
+			<%
+			// for(int i=pageDTO.getStartPage();i<=pageDTO.getEndPage();i++){
+			%>
+			<%-- 	<a href="list.bo?pageNum=<%=i%>"><%=i %></a>  --%>
+			<%
+// }
 %>
-<%-- <%= result %> --%>
-         <%=rdto.getSprice()/rdto.getCamp_price()%>박
-<%-- 			  <%=rdto.getCamp_price()%>박 --%>
-				
-	    </td>
-	    
-		
-<%-- 		<td><button type="button" id="reviewBtn" class="btn btn-outline-success" onclick="location.href='insertReview.rv?res_id=<%=rdto.getRes_id()%>&camp_id=<%=rdto.getCamp_id()%>'">리뷰 작성</button></td> --%>
-			
-  <td>
-  <button type="button" class="btn btn-outline-success" onclick="location.href='resstch.re?res_id=<%=rdto.getRes_id()%>'">완료</button>
-</td>
-						
-	    <td><button type="button" class="btn btn-outline-secondary" onclick="location.href='admindelete.re?res_id=<%=rdto.getRes_id()%>'">취소</button></td></tr>
-		<%
- 	}
- 	%> 
- 	
-	</table>
+
+			<%
+			//끝페이지번호  전체페이지수 비교 => 전체페이지수 크면 => Next보임
+			// if(pageDTO.getEndPage() < pageDTO.getPageCount()){
+			%>
+			<%-- 	<a href="list.bo?pageNum=<%=pageDTO.getStartPage()+pageDTO.getPageBlock()%>">Next</a> --%>
+			<%
+// }
+%>
+			<%-- 	<a href="list.bo?pageNum=<%=pageDTO.getStartPage()-pageDTO.getPageBlock()%>">Prev</a> --%>
+			<%
+
+			%>
+
+
+
+
+
+
+		</article>
 	</div>
-<!-- <h1>page</h1> -->
-<%
-
-
-
- if(startPage > pageBlock){
-	%>
-	<a href="admin_reserve.re?pageNum=<%=startPage-pageBlock%>">[10페이지 이전]</a>
-	<%
-}
- %>
-<div class="pagination" >
-<%
- for(int i=startPage;i<=endPage;i++){
-	%>
-	
-	<a href="admin_reserve.re?pageNum=<%=i%>"><%=i%></a>
-	<%
-}
- %> 
-</div>
-<%
-
-// 10페이지 다음
-if(endPage < pageCount){
-	%>
-	<a href="admin_reserve.re?pageNum=<%=startPage+pageBlock%>">[10페이지 다음]</a>
-	<%
-
- }
- %>
-	
-
-
-
-
-
-<%
-// for(int i=pageDTO.getStartPage();i<=pageDTO.getEndPage();i++){
-	%>
-<%-- 	<a href="list.bo?pageNum=<%=i%>"><%=i %></a>  --%>
-	<%
-// }
-%>
-
-<%
-//끝페이지번호  전체페이지수 비교 => 전체페이지수 크면 => Next보임
-// if(pageDTO.getEndPage() < pageDTO.getPageCount()){
-	%>
-<%-- 	<a href="list.bo?pageNum=<%=pageDTO.getStartPage()+pageDTO.getPageBlock()%>">Next</a> --%>
-	<%
-// }
-%>
-<%-- 	<a href="list.bo?pageNum=<%=pageDTO.getStartPage()-pageDTO.getPageBlock()%>">Prev</a> --%>
-	<%
-
-%> 
-
-
-
-
-
-
-</article>
-</div>
-<!-- <!-- 푸터 들어가는 곳  -->
-<jsp:include page="/inc/bottom.jsp" />
-<!-- <!-- 푸터 들어가는 곳 -->
+	<!-- <!-- 푸터 들어가는 곳  -->
+	<jsp:include page="/inc/bottom.jsp" />
+	<!-- <!-- 푸터 들어가는 곳 -->
 
 </body>
 </html>

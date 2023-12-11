@@ -32,7 +32,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 
 
 
- 
+
 
 <body>
 	<jsp:include page="/inc/top.jsp" />
@@ -79,14 +79,14 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 							<img class="commu-contents-list__free-icon-user-8484069-3"
 								src="commuContentsList/free-icon-user-8484069-3.png" />
 							<!-- 좋아요 -->
-<!-- 							<form action="submit" method="post"> -->
-<!-- 								<button type="button" id="likeButton3"> -->
-<!-- 									<img class="commu-contents-list__image-3" -->
-<!-- 										src="commuContentsList/image-3.png" /> -->
-<!-- 								</button> -->
-<!-- 							</form> -->
-<!-- 							좋아요  -->
-<%-- 							<div class="commu-contents-list___51" id="likeCount3"><%=commuDTO.getLike_cnt()%></div> --%>
+							<!-- 							<form action="submit" method="post"> -->
+							<!-- 								<button type="button" id="likeButton3"> -->
+							<!-- 									<img class="commu-contents-list__image-3" -->
+							<!-- 										src="commuContentsList/image-3.png" /> -->
+							<!-- 								</button> -->
+							<!-- 							</form> -->
+							<!-- 							좋아요  -->
+							<%-- 							<div class="commu-contents-list___51" id="likeCount3"><%=commuDTO.getLike_cnt()%></div> --%>
 						</div>
 					</div>
 					<%
@@ -95,7 +95,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				</div>
 			</div>
 
- 
+
 			<div class="commu-contents-list__title">
 				<div class="commu-contents-list__2">커뮤니티</div>
 			</div>
@@ -286,12 +286,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
  		         type : "POST",
  		         url : "deleteLike.commu",
  		         data: {'member_id':memberid,'post_id':postid}, 
- 		        /* success : function (data, status) {
- 		            alert(status);
- 		         },
- 		         error : function (status) {
- 		            alert(status + "error!");
- 		         }  */
+ 		       
  		     }); 
  
     } 

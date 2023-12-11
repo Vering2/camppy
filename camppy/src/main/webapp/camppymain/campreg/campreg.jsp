@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.List"%>
 <%@page import="java.text.Normalizer"%>
@@ -56,80 +56,60 @@
 
 	<h2>캠핑장 정보 등록</h2>
 
-	<form action="campregPro.campreg" method="post" enctype="multipart/form-data">
+	<form action="campregPro.campreg" method="post"
+		enctype="multipart/form-data">
 		캠핑장 이름 : <input type="text" name="campname" required><br>
 		한줄 소개 : <input type="text" name="shortintro" required><br>
 		<h3>캠핑장 태그를 선택해주세요</h3>
-		<input type="checkbox"
-       name="camptagall" 
-       value="selectall"
-       onclick='selectAll(this)'/> <b>전체 선택</b>
-<br>
-<input type="checkbox"
-       name="camptag1" 
-       value="O"/> 전기
-
-<input type="checkbox" 
-       name="camptag2" 
-       value='O' /> 와이파이
-
-<input type="checkbox" 
-       name="camptag3" 
-       value="O" /> 장작판매
-      
-<input type="checkbox" 
-       name="camptag4" 
-       value="O" /> 온수
-      
-       <input type="checkbox" 
-       name="camptag5" 
-       value="O" /> 물놀이장
-     
-       <input type="checkbox" 
-       name="camptag6" 
-       value="O" /> 놀이터
-      
-       <input type="checkbox" 
-       name="camptag7" 
-       value="O" /> 운동시설
-       <br>
-       
-		
-		캠핑장 대표 사진 : <input type="file" name="campimg" required><br>
-		주소 : <input type="text" id="sample4_postcode" placeholder="우편번호" name="postAddr1"  readonly required>
-<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" required><br>
-<input type="text" id="sample4_roadAddress" placeholder="도로명주소" name="postAddr2" size="60"  readonly required><br>
-<input type="hidden" id="sample4_jibunAddress" placeholder="지번주소"  size="60" required>
-<span id="guide" style="color:#999;display:none" ></span>
-<input type="text" id="sample4_detailAddress" placeholder="상세주소" name="postAddr3" size="60"><br>
-<input type="hidden" id="sample4_extraAddress" placeholder="참고항목"  size="60" required>
-<input type="hidden" id="sample4_engAddress" placeholder="영문주소"  size="60" required><br>
-
-		문의처 : <input type="text" name="tel" required><br>
-		캠핑장 환경 : <input type="text" name="environment" required><br>
-		캠핑장 유형 : <input type="text" name="camptype" required><br>
-		운영기간 : <input type="text" name="season" required><br>
-		운영일 : <input type="text" name="runtime" required><br>
-		홈페이지 : <input type="text" name="homepage" required><br>
-		주변이용가능시설 : <input type="text" name="facility" required><br>
-		소개 : <input type="text" name="intro" required><br>
+		<input type="checkbox" name="camptagall" value="selectall"
+			onclick='selectAll(this)' /> <b>전체 선택</b> <br> <input
+			type="checkbox" name="camptag1" value="O" /> 전기 <input
+			type="checkbox" name="camptag2" value='O' /> 와이파이 <input
+			type="checkbox" name="camptag3" value="O" /> 장작판매 <input
+			type="checkbox" name="camptag4" value="O" /> 온수 <input
+			type="checkbox" name="camptag5" value="O" /> 물놀이장 <input
+			type="checkbox" name="camptag6" value="O" /> 놀이터 <input
+			type="checkbox" name="camptag7" value="O" /> 운동시설 <br> 캠핑장 대표
+		사진 : <input type="file" name="campimg" required><br> 주소 :
+		<input type="text" id="sample4_postcode" placeholder="우편번호"
+			name="postAddr1" readonly required> <input type="button"
+			onclick="sample4_execDaumPostcode()" value="우편번호 찾기" required><br>
+		<input type="text" id="sample4_roadAddress" placeholder="도로명주소"
+			name="postAddr2" size="60" readonly required><br> <input
+			type="hidden" id="sample4_jibunAddress" placeholder="지번주소" size="60"
+			required> <span id="guide" style="color: #999; display: none"></span>
+		<input type="text" id="sample4_detailAddress" placeholder="상세주소"
+			name="postAddr3" size="60"><br> <input type="hidden"
+			id="sample4_extraAddress" placeholder="참고항목" size="60" required>
+		<input type="hidden" id="sample4_engAddress" placeholder="영문주소"
+			size="60" required><br> 문의처 : <input type="text"
+			name="tel" required><br> 캠핑장 환경 : <input type="text"
+			name="environment" required><br> 캠핑장 유형 : <input
+			type="text" name="camptype" required><br> 운영기간 : <input
+			type="text" name="season" required><br> 운영일 : <input
+			type="text" name="runtime" required><br> 홈페이지 : <input
+			type="text" name="homepage" required><br> 주변이용가능시설 : <input
+			type="text" name="facility" required><br> 소개 : <input
+			type="text" name="intro" required><br>
 		<h3>캠핑장 사진들(최대 5개)</h3>
-<input type="button" value="사진 추가" onclick="javascript:addInputBox();">  <input type="button" value="추가한 사진 삭제" onclick="javascript:subtractInputBox();"><br>
-<table id="dynamic_table" border="1">
-</table>
+		<input type="button" value="사진 추가" onclick="javascript:addInputBox();">
+		<input type="button" value="추가한 사진 삭제"
+			onclick="javascript:subtractInputBox();"><br>
+		<table id="dynamic_table" border="1">
+		</table>
 		은행명 : <input type="text" name="bankname" required><br>
 		계좌번호 : <input type="text" name="bankaccount" required><br>
 		캠핑장 가격 : <input type="text" name="campprice" required><br>
 
 
-<input type="submit" value="캠핑장 정보 등록" onclick="if(!confirm('정말로 등록 하시겠습니까??')){return false;}" />
-	
-	
-<br>
-<div id="map" style="width:400px;height:400px;"></div>
- <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=05f313ffd7b2e16a198f2cdd6635f723&libraries=services"></script>	
-<script>
+		<input type="submit" value="캠핑장 정보 등록"
+			onclick="if(!confirm('정말로 등록 하시겠습니까??')){return false;}" /> <br>
+		<div id="map" style="width: 400px; height: 400px;"></div>
+		<script
+			src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+		<script type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=05f313ffd7b2e16a198f2cdd6635f723&libraries=services"></script>
+		<script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
@@ -242,14 +222,17 @@ function sample4_execDaumPostcode() {
 
 </script>
 
-<input type="text" id="doo" placeholder="도"  size="60" name="doo" readonly><br>
-<input type="text" id="sigungu" placeholder="시군구"  size="60" name="sigungu" readonly><br>
-<input type="text" id="mapx" placeholder="X좌표"  name="mapx" size="60" readonly><br>
-<input type="text" id="mapy" placeholder="Y좌표"  name="mapy" size="60" readonly><br>
-<input type="text" id="rowscount" placeholder="rowscount"  name="rowscount" size="60" readonly><br>
-</form>
+		<input type="text" id="doo" placeholder="도" size="60" name="doo"
+			readonly><br> <input type="text" id="sigungu"
+			placeholder="시군구" size="60" name="sigungu" readonly><br>
+		<input type="text" id="mapx" placeholder="X좌표" name="mapx" size="60"
+			readonly><br> <input type="text" id="mapy"
+			placeholder="Y좌표" name="mapy" size="60" readonly><br> <input
+			type="text" id="rowscount" placeholder="rowscount" name="rowscount"
+			size="60" readonly><br>
+	</form>
 
-<script type="text/javascript">
+	<script type="text/javascript">
  var count = 1;
  var addCount;
  

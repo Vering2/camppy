@@ -29,7 +29,6 @@
 	top: 15px;
 	border-bottom: solid;
 	border-width: 1px;
-	
 }
 
 .reviewCount {
@@ -46,18 +45,19 @@
 }
 
 .buttonInsert {
-  background: #4da285;
-  border-radius: 5.97px;
-  flex-shrink: 0;
-  width: 75px;
-  height: 25px;
-  position: absolute;
-  left: 1075px;
-  top: 30px;
-  color: #ffffff;
-  text-align: center;
-  font: "NanumGothic", sans-serif;
+	background: #4da285;
+	border-radius: 5.97px;
+	flex-shrink: 0;
+	width: 75px;
+	height: 25px;
+	position: absolute;
+	left: 1075px;
+	top: 30px;
+	color: #ffffff;
+	text-align: center;
+	font: "NanumGothic", sans-serif;
 }
+
 .campinfoList {
 	border-width: 0.98px 0px 0px 0px;
 	border-style: solid;
@@ -145,6 +145,7 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .reviewName {
 	display: flex;
 	flex-direction: row;
@@ -223,8 +224,7 @@
 	justify-content: flex-start;
 }
 
-
-.buttonUpdate{
+.buttonUpdate {
 	display: flex;
 	flex-direction: row;
 	gap: 0.98px;
@@ -235,6 +235,7 @@
 	left: 350px;
 	top: 10px;
 }
+
 .buttonDel {
 	display: flex;
 	flex-direction: row;
@@ -246,7 +247,8 @@
 	left: 400px;
 	top: 10px;
 }
-.buttonSave{
+
+.buttonSave {
 	display: flex;
 	flex-direction: row;
 	gap: 0.98px;
@@ -257,7 +259,8 @@
 	left: 800px;
 	top: 10px;
 }
-.buttonCancel{
+
+.buttonCancel {
 	display: flex;
 	flex-direction: row;
 	gap: 0.98px;
@@ -269,40 +272,42 @@
 	top: 10px;
 	display: none;
 }
-.editContent { 
-  resize: none;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 600px; 
-  height: 20px;
-  font: 400 13.71px/19.58px "NanumGothic", sans-serif;
-  color: #777777;
+
+.editContent {
+	resize: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 20px;
+	font: 400 13.71px/19.58px "NanumGothic", sans-serif;
+	color: #777777;
 }
-  .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        left: 940px;
-    }
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	left: 940px;
+}
 
 .pagination a {
-        text-decoration: none;
-        padding: 8px 16px;
-        margin: 0 4px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        color: #333;
-        transition: background-color 0.3s, color 0.3s;
-    }
+	text-decoration: none;
+	padding: 8px 16px;
+	margin: 0 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #333;
+	transition: background-color 0.3s, color 0.3s;
+}
 
-    .pagination a.active {
-        background-color: #333;
-        color: #fff;
-    }
+.pagination a.active {
+	background-color: #333;
+	color: #fff;
+}
 
-    .pagination a:hover {
-        background-color: #333;
-        color: #fff;
-          }
+.pagination a:hover {
+	background-color: #333;
+	color: #fff;
+}

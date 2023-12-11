@@ -23,24 +23,15 @@
 <!-- <link rel="stylesheet" href="css/insert.css" type="text/css" > -->
 <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
 <style>
- a,
-      button,
-      input,
-      select,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      * {
-        margin: 0;
-        padding: 0;
-        border: none;
-        text-decoration: none;
-        appearance: none;
-        background: none;
-      }
-      
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	appearance: none;
+	background: none;
+}
+
 div {
 	display: block;
 }
@@ -165,366 +156,340 @@ label {
 	flex: 1;
 }
 
- 	   
-       table {
-    /* width: 400px;
+table {
+	/* width: 400px;
     height: 200px; */
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-
-
+	margin-left: auto;
+	margin-right: auto;
+}
 
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 /* section calendar */
 @font-face {
-    font-family: 'NanumSquareR';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Nanum Square Regular'),
-        local('NanumSquareR'),
+	font-family: 'NanumSquareR';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Nanum Square Regular'), local('NanumSquareR'),
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    --blue: #3f99ff;
+	--blue: #3f99ff;
 }
 
 body {
-    font-family: NanumSquareR;
+	font-family: NanumSquareR;
 }
 
 a {
-    text-decoration-line: none;
-    text-decoration: none;
-    color: #000;
+	text-decoration-line: none;
+	text-decoration: none;
+	color: #000;
 }
 
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
 
 /* Calendar ---------------------------------------------------- */
 .calendar-wrap {
-    max-width: 1175px;
-    padding-top: 50px;
-    margin: 0 auto;
-    font-family: "NanumSquareR";
-    display: flex;
-    gap: 2%;
-    margin-bottom: 20px;
+	max-width: 1175px;
+	padding-top: 50px;
+	margin: 0 auto;
+	font-family: "NanumSquareR";
+	display: flex;
+	gap: 2%;
+	margin-bottom: 20px;
 }
 
-.calendar-wrap>div {}
+.calendar-wrap>div {
+	
+}
 
 .calendar-middle-wrap {
-    background: #fafbfa;
-    width: 34%;
-    padding: 40px 32px;
-    padding-bottom: 100px;
+	background: #fafbfa;
+	width: 34%;
+	padding: 40px 32px;
+	padding-bottom: 100px;
 }
 
 .checkInOutInfo {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fafbfa;
-    position: relative;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fafbfa;
+	position: relative;
 }
 
 .calendar-wrap .cal_nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 78px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 78px;
 }
 
 .calendar-wrap .cal_nav .year-month {
-    width: 300px;
-    text-align: center;
-    line-height: 1;
-    font-size: 20px;
+	width: 300px;
+	text-align: center;
+	line-height: 1;
+	font-size: 20px;
 }
 
 .calendar-wrap .cal_nav .nav {
-    display: flex;
-    border: 1px solid #333333;
-    border-radius: 5px;
+	display: flex;
+	border: 1px solid #333333;
+	border-radius: 5px;
 }
 
-.calendar-wrap .cal_nav .go-prev,
-.calendar-wrap .cal_nav .go-next {
-    display: block;
-    width: 50px;
-    font-size: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.calendar-wrap .cal_nav .go-prev, .calendar-wrap .cal_nav .go-next {
+	display: block;
+	width: 50px;
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.calendar-wrap .cal_nav .go-prev::before,
-.calendar-wrap .cal_nav .go-next::before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #000;
-    border-width: 3px 3px 0 0;
-    transition: border 0.1s;
+.calendar-wrap .cal_nav .go-prev::before, .calendar-wrap .cal_nav .go-next::before
+	{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #000;
+	border-width: 3px 3px 0 0;
+	transition: border 0.1s;
 }
 
 .calendar-wrap .cal_nav .go-prev::before {
-    transform: rotate(-135deg);
+	transform: rotate(-135deg);
 }
 
 .calendar-wrap .cal_nav .go-next::before {
-    transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .calendar-wrap .cal_wrap {
-    padding-top: 40px;
-    position: relative;
-    margin: 0 auto;
+	padding-top: 40px;
+	position: relative;
+	margin: 0 auto;
 }
 
 .calendar-wrap .cal_wrap::after {
-    top: 368px;
+	top: 368px;
 }
 
 .calendar-wrap .cal_wrap .dates {
-    display: flex;
-    flex-flow: wrap;
-    height: 290px;
+	display: flex;
+	flex-flow: wrap;
+	height: 290px;
 }
 
 .calendar-wrap .cal_wrap .days {
-    display: flex;
-    margin-bottom: 20px;
+	display: flex;
+	margin-bottom: 20px;
 }
 
 .calendar-wrap .cal_wrap .day {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% / 7);
-    text-align: left;
-    color: #2d1d0b;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/ 7);
+	text-align: left;
+	color: #2d1d0b;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
 }
 
 .calendar-wrap .cal_wrap .day span {
-    z-index: 5;
+	z-index: 5;
 }
 
 .calendar-wrap .cal_wrap .day .check_in_out_p {
-    position: absolute;
-    left: 50%;
-    top: 47px;
-    transform: translateX(-50%);
-    font-size: 12px;
-    width: 100%;
-    color: var(--blue);
+	position: absolute;
+	left: 50%;
+	top: 47px;
+	transform: translateX(-50%);
+	font-size: 12px;
+	width: 100%;
+	color: var(--blue);
 }
 
 .calendar-wrap .cal_wrap .checkIn span {
-    color: #fff;
+	color: #fff;
 }
 
 .calendar-wrap .cal_wrap .checkOut span {
-    color: #fff;
+	color: #fff;
 }
 
 .calendar-wrap .cal_wrap .selectDay {
-    position: relative;
+	position: relative;
 }
 
 .calendar-wrap .cal_wrap .selectDay::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 30px;
-    background: #c3defc;
-    opacity: 0.5;
-    z-index: 1;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 30px;
+	background: #c3defc;
+	opacity: 0.5;
+	z-index: 1;
 }
 
 .calendar-wrap .cal_wrap .checkIn.selectDay::before {
-    left: 50%;
-    width: 50%;
+	left: 50%;
+	width: 50%;
 }
 
 .calendar-wrap .cal_wrap .checkOut.selectDay::before {
-    width: 50%;
+	width: 50%;
 }
 
-.calendar-wrap .cal_wrap .checkIn::after,
-.calendar-wrap .cal_wrap .checkOut::after,
-.calendar-wrap .cal_wrap .checkIn::after {
-    content: '';
-    background: var(--blue);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 2;
+.calendar-wrap .cal_wrap .checkIn::after, .calendar-wrap .cal_wrap .checkOut::after,
+	.calendar-wrap .cal_wrap .checkIn::after {
+	content: '';
+	background: var(--blue);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 2;
 }
 
 .calendar-wrap .cal_wrap .day:nth-child(7n -6) {
-    color: #ed2a61;
+	color: #ed2a61;
 }
 
 .calendar-wrap .cal_wrap .day:nth-child(7n) {
-    color: #3c6ffa;
+	color: #3c6ffa;
 }
 
 .calendar-wrap .cal_wrap .day.disable {
-    color: #ddd;
+	color: #ddd;
 }
 
 .current.today {
-    background: rgb(242 242 242);
+	background: rgb(242, 242, 242);
 }
 
 .checkInOutInfo>div {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .checkInOutInfo p {
-    font-size: 24px;
-    color: #494949;
-    line-height: 1.7;
-    text-align: center;
+	font-size: 24px;
+	color: #494949;
+	line-height: 1.7;
+	text-align: center;
 }
 
 .checkInOutInfo p.space {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .checkInOutInfo p:nth-child(1) {
-    width: 100%;
+	width: 100%;
 }
 
 .checkInOutInfo p:nth-child(3) {
-    width: 100%;
+	width: 100%;
 }
 
 .checkInOutInfo p span {
-    display: block;
-    font-size: 16px;
-    color: #a1a1a1;
+	display: block;
+	font-size: 16px;
+	color: #a1a1a1;
 }
 
-
 @media screen and (max-width :1200px) {
-    .calendar-wrap {
-        flex-wrap: wrap;
-        padding: 2%;
-    }
-
-    .calendar-middle-wrap {
-        width: 49%;
-        padding: 40px 7%;
-    }
-
-    .checkInOutInfo {
-        width: 100%;
-        margin-top: 2%;
-        padding: 50px;
-    }
-
-    .checkInOutInfo>div {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .checkInOutInfo p:nth-child(1) {
-        width: 50%;
-    }
-
-    .checkInOutInfo p:nth-child(2) {
-        width: 50px;
-    }
-
-    .checkInOutInfo p:nth-child(3) {
-        width: 50%;
-    }
+	.calendar-wrap {
+		flex-wrap: wrap;
+		padding: 2%;
+	}
+	.calendar-middle-wrap {
+		width: 49%;
+		padding: 40px 7%;
+	}
+	.checkInOutInfo {
+		width: 100%;
+		margin-top: 2%;
+		padding: 50px;
+	}
+	.checkInOutInfo>div {
+		flex-direction: row;
+		width: 100%;
+	}
+	.checkInOutInfo p:nth-child(1) {
+		width: 50%;
+	}
+	.checkInOutInfo p:nth-child(2) {
+		width: 50px;
+	}
+	.checkInOutInfo p:nth-child(3) {
+		width: 50%;
+	}
 }
 
 @media screen and (max-width:768px) {
-    .calendar-middle-wrap {
-        width: 100%;
-        padding: 40px 10%;
-    }
-
-    .calendar-middle-wrap:first-of-type {
-        margin-bottom: 2%;
-    }
-
-    .checkInOutInfo {
-        padding: 20px;
-    }
-
-    .checkInOutInfo>div {
-        flex-direction: column;
-    }
-
-    .checkInOutInfo p:nth-child(1) {
-        width: 100%;
-    }
-
-    .checkInOutInfo p:nth-child(2) {
-        width: 100%;
-    }
-
-    .checkInOutInfo p:nth-child(3) {
-        width: 100%;
-    }
-
-    .checkInOutInfo p.space {
-        margin-bottom: 0;
-    }
-
-    .checkInOutInfo p span {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .checkInOutInfo p label {
-        font-size: 20px;
-    }
+	.calendar-middle-wrap {
+		width: 100%;
+		padding: 40px 10%;
+	}
+	.calendar-middle-wrap:first-of-type {
+		margin-bottom: 2%;
+	}
+	.checkInOutInfo {
+		padding: 20px;
+	}
+	.checkInOutInfo>div {
+		flex-direction: column;
+	}
+	.checkInOutInfo p:nth-child(1) {
+		width: 100%;
+	}
+	.checkInOutInfo p:nth-child(2) {
+		width: 100%;
+	}
+	.checkInOutInfo p:nth-child(3) {
+		width: 100%;
+	}
+	.checkInOutInfo p.space {
+		margin-bottom: 0;
+	}
+	.checkInOutInfo p span {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.checkInOutInfo p label {
+		font-size: 20px;
+	}
 }
-
-
-
 </style>
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet"
+	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -535,7 +500,7 @@ ul {
 
 
 	<!-- 헤더파일들어가는 곳 -->
-	<jsp:include page="/inc/top.jsp"/>
+	<jsp:include page="/inc/top.jsp" />
 	<!-- 헤더파일들어가는 곳 -->
 	<%
 	// String id=(String)session.getAttribute("id"); 
@@ -543,19 +508,16 @@ ul {
 	// MemberDTO mdto = (MemberDTO)request.getAttribute("mdto");
 	%>
 	<article>
-		
-<%
-MemberDTO memberDTO =(MemberDTO)request.getAttribute("memberDTO");
-CampRegDTO campRegDTO = (CampRegDTO)request.getAttribute("campRegDTO");
-ReserveDetailDTO reservedto = new ReserveDetailDTO();
-ReserveDetailDAO reservedao = new ReserveDetailDAO();
-ReserveService reserveservice = new ReserveService();
-List<ReserveDetailDTO> datelist = new ArrayList<ReserveDetailDTO>();
-datelist = reservedao.getDatelist(campRegDTO.getCampid());
 
-
-
-%>
+		<%
+		MemberDTO memberDTO = (MemberDTO) request.getAttribute("memberDTO");
+		CampRegDTO campRegDTO = (CampRegDTO) request.getAttribute("campRegDTO");
+		ReserveDetailDTO reservedto = new ReserveDetailDTO();
+		ReserveDetailDAO reservedao = new ReserveDetailDAO();
+		ReserveService reserveservice = new ReserveService();
+		List<ReserveDetailDTO> datelist = new ArrayList<ReserveDetailDTO>();
+		datelist = reservedao.getDatelist(campRegDTO.getCampid());
+		%>
 
 
 		<div id="wrap">
@@ -564,50 +526,57 @@ datelist = reservedao.getDatelist(campRegDTO.getCampid());
 				<fieldset>
 					<h3 class="menu-section">예약자 정보확인</h3>
 					<div class="ap-services">
-					<input type="hidden" name="member_id" value="<%=memberDTO.getMember_id() %>"><br>
-					<input type="hidden" name="id" value="<%=memberDTO.getId() %>"><br>
-						예약자명 : <input type="text" readonly name="name" value="<%=memberDTO.getName()%>"><br>
-						전화번호 : <input type="text" readonly name="phone" value="<%=memberDTO.getPhone()%>"><br>
-						닉네임 : <input type="text" readonly name="nick" value="<%=memberDTO.getNick()%>">
+						<input type="hidden" name="member_id"
+							value="<%=memberDTO.getMember_id()%>"><br> <input
+							type="hidden" name="id" value="<%=memberDTO.getId()%>"><br>
+						예약자명 : <input type="text" readonly name="name"
+							value="<%=memberDTO.getName()%>"><br> 전화번호 : <input
+							type="text" readonly name="phone"
+							value="<%=memberDTO.getPhone()%>"><br> 닉네임 : <input
+							type="text" readonly name="nick" value="<%=memberDTO.getNick()%>">
 					</div>
 
 					<h3 class="menu-section">예약정보 입력</h3>
 					<div class="ap-services">
-					<input type="hidden" name="camp_id" value="<%=campRegDTO.getCampid() %>"><br>
-					<input type="hidden" name="camp_price" value="<%=campRegDTO.getCampprice() %>"><br>
-						캠핑장 이름 : <input type="text" readonly name="camp_name" value="<%=campRegDTO.getCampname()%>"><br>
-						
-					
-					<div class="ui-grid-b">
-        
-        
-        <div class="ui-block-c">
-        </div>
-    </div>
-    <div class="ui-grid-b">
-    <div class="ui-block-a">
-            <label>체크인</label>
-        </div>
-        <div class="ui-block-a">
-            <input type="text" id="datepicker_start" name="checkin_date" placeholder="체크인 날짜를 선택해주세요" readonly="readonly">
-        </div>
-        <div class="ui-block-b">
-            <label>체크아웃</label>
-        </div>
-        <div class="ui-block-b">
-            <input type="text" id="datepicker_end" name="checkout_date" placeholder="체크아웃 날짜를 선택해주세요" readonly="readonly">
-        </div>
-        <!-- <div class="ui-block-c">
+						<input type="hidden" name="camp_id"
+							value="<%=campRegDTO.getCampid()%>"><br> <input
+							type="hidden" name="camp_price"
+							value="<%=campRegDTO.getCampprice()%>"><br> 캠핑장 이름
+						: <input type="text" readonly name="camp_name"
+							value="<%=campRegDTO.getCampname()%>"><br>
+
+
+						<div class="ui-grid-b">
+
+
+							<div class="ui-block-c"></div>
+						</div>
+						<div class="ui-grid-b">
+							<div class="ui-block-a">
+								<label>체크인</label>
+							</div>
+							<div class="ui-block-a">
+								<input type="text" id="datepicker_start" name="checkin_date"
+									placeholder="체크인 날짜를 선택해주세요" readonly="readonly">
+							</div>
+							<div class="ui-block-b">
+								<label>체크아웃</label>
+							</div>
+							<div class="ui-block-b">
+								<input type="text" id="datepicker_end" name="checkout_date"
+									placeholder="체크아웃 날짜를 선택해주세요" readonly="readonly">
+							</div>
+							<!-- <div class="ui-block-c">
             <button id="date_search">날짜검색</button>
         </div> -->
-    </div>
-							
-						숙박료 : <input type="text" readonly id ="price" class="price" name="price" value="<%=campRegDTO.getCampprice() %>원 /1박"><br>
-						
+						</div>
+
+						숙박료 : <input type="text" readonly id="price" class="price"
+							name="price" value="<%=campRegDTO.getCampprice()%>원 /1박"><br>
+
 						<!-- 입실일 : <input type="date"  id="checkin_date" name="checkin_date"><br>
  						퇴실일 : <input type="date"  name="checkout_date" id="checkout_date"> -->
-						<br> 인원수 : <select
-							name="guest">
+						<br> 인원수 : <select name="guest">
 							<option value="1">1명</option>
 							<option value="2">2명</option>
 							<option value="3">3명</option>
@@ -619,46 +588,42 @@ datelist = reservedao.getDatelist(campRegDTO.getCampid());
 							<option value="9">9명</option>
 						</select><br>
 					</div>
-					<input type="submit" value="예약하기" >
-					<input type="hidden" name="id" value="textbox"> <input type="hidden"
+					<input type="submit" value="예약하기"> <input type="hidden"
+						name="id" value="textbox"> <input type="hidden"
 						name="campid" value="textbox">
 				</fieldset>
 			</form>
-			
-			
-			
+
+
+
 		</div>
-		
-		
+
+
 
 	</article>
-	
-<script>
+
+	<script>
 disabledDates=[];
-<%for(int i=0; i< datelist.size() ; i++){
-ReserveDetailDTO reservedetailDTO=datelist.get(i);
-String checkindate = reservedetailDTO.getCheckin_date();
-checkindate = "'"+checkindate.substring(0,10)+"'";
-String checkoutdate = reservedetailDTO.getCheckout_date();
-checkoutdate = "'"+checkoutdate.substring(0,10)+"'";
-%>
+<%for (int i = 0; i < datelist.size(); i++) {
+	ReserveDetailDTO reservedetailDTO = datelist.get(i);
+	String checkindate = reservedetailDTO.getCheckin_date();
+	checkindate = "'" + checkindate.substring(0, 10) + "'";
+	String checkoutdate = reservedetailDTO.getCheckout_date();
+	checkoutdate = "'" + checkoutdate.substring(0, 10) + "'";%>
 disabledDates.push(getDatesStartToLast(<%=checkindate%>, <%=checkoutdate%>));
 getDatesStartToLast(<%=checkindate%>, <%=checkoutdate%>);
-<%}
-%>
+<%}%>
 
 disabledDates1=[];
-<%for(int i=0; i< datelist.size() ; i++){
-ReserveDetailDTO reservedetailDTO=datelist.get(i);
-String checkindate = reservedetailDTO.getCheckin_date();
-checkindate = "'"+checkindate.substring(0,10)+"'";
-String checkoutdate = reservedetailDTO.getCheckout_date();
-checkoutdate = "'"+checkoutdate.substring(0,10)+"'";
-%>
+<%for (int i = 0; i < datelist.size(); i++) {
+	ReserveDetailDTO reservedetailDTO = datelist.get(i);
+	String checkindate = reservedetailDTO.getCheckin_date();
+	checkindate = "'" + checkindate.substring(0, 10) + "'";
+	String checkoutdate = reservedetailDTO.getCheckout_date();
+	checkoutdate = "'" + checkoutdate.substring(0, 10) + "'";%>
 disabledDates.push(getDatesStartToLast(<%=checkindate%>, <%=checkoutdate%>));
 getDatesStartToLast1(<%=checkindate%>, <%=checkoutdate%>);
-<%}
-%>
+<%}%>
 
 function getDatesStartToLast(startDate, lastDate) {
 	var regex = RegExp(/^\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/);

@@ -1,177 +1,190 @@
 @font-face {
-    font-family: 'pretendard-medium';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/pretendard-medium-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'pretendard-medium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/pretendard-medium-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
-
-.notice-update,
-.notice-update * {
-  box-sizing: border-box;
+.notice-update, .notice-update * {
+	box-sizing: border-box;
 }
+
 .noticeupdate {
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5099vw;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 97.9167vw;
-  height: 69.8677vw;
-  position: relative;
-  overflow: hidden;
+	background: #ffffff;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	width: 97.9167vw;
+	height: 69.8677vw;
+	position: relative;
+	overflow: hidden;
 }
 
 .noticeupdateSectionBody {
-  flex-shrink: 0;
-  width: 97.9167vw;
-  height: 69.8677vw;
-  position: relative;
-  overflow: hidden;
+	flex-shrink: 0;
+	width: 97.9167vw;
+	height: 69.8677vw;
+	position: relative;
+	overflow: hidden;
 }
+
 .noticeupdateBodyContents {
-  width: 72.5198vw;
-  height: 51.2021vw;
-  position: absolute;
-  left: 12.1885vw;
-  top: 3.7740vw;
-  overflow: hidden;
+	width: 72.5198vw;
+	height: 51.2021vw;
+	position: absolute;
+	left: 12.1885vw;
+	top: 3.7740vw;
+	overflow: hidden;
 }
+
 .noticeupdateLine2 {
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.0510vw 0 0 0;
-  width: 62.4219vw;
-  height: 0.0000vw;
-  position: absolute;
-  left: 2.8047vw;
-  top: 41.5125vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 62.4219vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 2.8047vw;
+	top: 41.5125vw;
 }
+
 .noticeupdateGroup2 {
-  position: absolute;
-  inset: 0;
+	position: absolute;
+	inset: 0;
 }
+
 .noticeupdateRectangle2 {
-  border-radius: 0.2552vw;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.1021vw;
-  width: 17.0333vw;
-  height: 3.3656vw;
-  position: absolute;
-  left: 2.6010vw;
-  top: 2.0401vw;
+	border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.1021vw;
+	width: 17.0333vw;
+	height: 3.3656vw;
+	position: absolute;
+	left: 2.6010vw;
+	top: 2.0401vw;
 }
+
 .noticeUpdate23 {
-  font: 1.5625vw "pretendard-medium", sans-serif;
-  text-align: center;
-  width: 9.1208vw;
-  height: 3.1901vw;
+	font: 1.5625vw "pretendard-medium", sans-serif;
+	text-align: center;
+	width: 9.1208vw;
+	height: 3.1901vw;
 }
+
 .noticeupdateFreeIconImage1 {
-  opacity: 0.30000001192092896;
-  width: 5.4568vw;
-  height: 4.2839vw;
-  position: absolute;
-  left: 4.6406vw;
-  top: 43.5526vw;
+	opacity: 0.30000001192092896;
+	width: 5.4568vw;
+	height: 4.2839vw;
+	position: absolute;
+	left: 4.6406vw;
+	top: 43.5526vw;
 }
+
 .noticeupdateImage1 {
-  width: 2.1927vw;
-  height: 2.1927vw;
-  position: absolute;
-  left: 16.6255vw;
-  top: 2.6010vw;
+	width: 2.1927vw;
+	height: 2.1927vw;
+	position: absolute;
+	left: 16.6255vw;
+	top: 2.6010vw;
 }
+
 .noticeupdateRectangle1 {
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.0510vw;
-  width: 62.4729vw;
-  height: 43.2464vw;
-  position: absolute;
-  left: 2.7542vw;
-  top: 6.6297vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw;
+	width: 62.4729vw;
+	height: 43.2464vw;
+	position: absolute;
+	left: 2.7542vw;
+	top: 6.6297vw;
 }
+
 .noticeupdateLine1 {
-  border-style: solid;
-  border-color: #000000;
-  border-width: 0.0510vw 0 0 0;
-  width: 58.3932vw;
-  height: 0.0000vw;
-  position: absolute;
-  left: 4.7938vw;
-  top: 13.9734vw;
+	border-style: solid;
+	border-color: #000000;
+	border-width: 0.0510vw 0 0 0;
+	width: 58.3932vw;
+	height: 0.0000vw;
+	position: absolute;
+	left: 4.7938vw;
+	top: 13.9734vw;
 }
+
 .noticeupdate2 {
-  border-color: #000000;
-  text-align: left;
-  font: 700 1.6318vw "pretendard-medium", sans-serif;
-  position: absolute;
-  left: 5.2104vw;
-  top: 9.3078vw;
-  width: 57.3297vw;
-  height: 2.6661vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  resize: none;
+	border-color: #000000;
+	text-align: left;
+	font: 700 1.6318vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 5.2104vw;
+	top: 9.3078vw;
+	width: 57.3297vw;
+	height: 2.6661vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	resize: none;
 }
+
 .noticeupdate3 {
-   border-color: #000000;
-  text-align: left;
-  font: 500 1.6318vw "pretendard-medium", sans-serif;
-  position: absolute;
-  left: 4.8979vw;
-  top: 14.7547vw;
-  width: 57.3297vw;
-  height: 33.3333vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-   resize: none;
+	border-color: #000000;
+	text-align: left;
+	font: 500 1.6318vw "pretendard-medium", sans-serif;
+	position: absolute;
+	left: 4.8979vw;
+	top: 14.7547vw;
+	width: 57.3297vw;
+	height: 33.3333vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	resize: none;
 }
+
 .noticeupdateBodyButton {
-  display: flex;
-  flex-direction: row;
-  gap: 46.3573vw;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  left: 14.9938vw;
-  top: 56.4042vw;
+	display: flex;
+	flex-direction: row;
+	gap: 46.3573vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: absolute;
+	left: 14.9938vw;
+	top: 56.4042vw;
 }
+
 .noticeupdateButtonExit {
-  border-radius: 0.2552vw;
-  border-style: solid;
-  border-color: #4da385;
-  border-width: 0.1021vw;
-  flex-shrink: 0;
-  width: 9.4854vw;
-  height: 4.2839vw;
-  position: absolute;
-  left: 0.0000vw;
-  top: 0.4078vw;
-  overflow: hidden;
-  color: #4da385;
-  font: 700 1.6318vw "pretendard-medium", sans-serif;
-  text-align: center;
+	border-radius: 0.2552vw;
+	border-style: solid;
+	border-color: #4da385;
+	border-width: 0.1021vw;
+	flex-shrink: 0;
+	width: 9.4854vw;
+	height: 4.2839vw;
+	position: absolute;
+	left: 0.0000vw;
+	top: 0.4078vw;
+	overflow: hidden;
+	color: #4da385;
+	font: 700 1.6318vw "pretendard-medium", sans-serif;
+	text-align: center;
 }
 
 .noticeupdateButtonupdate {
-  background: #4da385;
-  border-radius: 0.2552vw;
-  flex-shrink: 0;
-  width: 9.4854vw;
-  height: 4.2839vw;
-  position: absolute;
-  left: 52.9870vw;
-  top: 0.4078vw;
-  overflow: hidden;
-   color: #ffffff;
-  text-align: center;
-  font: 700 1.6318vw "pretendard-medium", sans-serif;
+	background: #4da385;
+	border-radius: 0.2552vw;
+	flex-shrink: 0;
+	width: 9.4854vw;
+	height: 4.2839vw;
+	position: absolute;
+	left: 52.9870vw;
+	top: 0.4078vw;
+	overflow: hidden;
+	color: #ffffff;
+	text-align: center;
+	font: 700 1.6318vw "pretendard-medium", sans-serif;
 }
-

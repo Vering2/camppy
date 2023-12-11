@@ -56,21 +56,15 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 						<div class="commu-contents-list__"><%=commuDTO.getTitle()%></div>
 						<div class="commu-contents-list__frame-189">
 							<a href="commuContentsList?post_id=<%=commuDTO.getPost_id()%>">
-						    <%
-							if(commuDTO.getImg_url() != null){
-							%>
-								<img class="commu-contents-list__rectangle-7"
-								src="upload/<%=commuDTO.getImg_url()%>" id="picture3">
 								<%
-							    }
-								else
-								{ 
-								%>
-							    <img class="commu-contents-list__rectangle-7"
-								src="upload/5.png" id="picture3">
-								<%
-								}
-								%>
+								if (commuDTO.getImg_url() != null) {
+								%> <img class="commu-contents-list__rectangle-7"
+								src="upload/<%=commuDTO.getImg_url()%>" id="picture3"> <%
+ } else {
+ %> <img class="commu-contents-list__rectangle-7"
+								src="upload/5.png" id="picture3"> <%
+ }
+ %>
 							</a>
 							<!-- user 닉네임 -->
 							<div class="commu-contents-list__user" id="name3"><%=commuDTO.getNickname()%></div>
@@ -120,7 +114,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				</div>
 			</form>
 
- 
+
 			<%
 			for (int i = 0; i < commuList.size(); i++) {
 				//commuList.size()
@@ -154,33 +148,32 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 
 					<!--              내용이미지  -->
 					<%
-					if(commuDTO.getImg_url() != null){ 
+					if (commuDTO.getImg_url() != null) {
 					%>
-					<a href="commuContentsListSearch.commu?post_id=<%=commuDTO.getPost_id()%>">
+					<a
+						href="commuContentsListSearch.commu?post_id=<%=commuDTO.getPost_id()%>">
 						<img class="commu-contents-list___002"
 						src="upload/<%=commuDTO.getImg_url()%>" id="bodyContentsImage">
 					</a>
 					<%
-					}
-					else
-					{ 
+					} else {
 					%>
 					<a href="commuContents.commu?post_id=<%=commuDTO.getPost_id()%>">
-						<img class="commu-contents-list___002"
-						src="upload/5.png" id="bodyContentsImage">
+						<img class="commu-contents-list___002" src="upload/5.png"
+						id="bodyContentsImage">
 					</a>
-                     <%
+					<%
 					}
-                     %>
-<!-- 					             좋아요 아이콘  -->
-<!-- 					<button type="button" id="bodyLikeIcon" > -->
-<!-- 						<img class="commu-contents-list__like-1" -->
-<!-- 							src="commuContentsList/like-1.png"> -->
-<!-- 					</button> -->
+					%>
+					<!-- 					             좋아요 아이콘  -->
+					<!-- 					<button type="button" id="bodyLikeIcon" > -->
+					<!-- 						<img class="commu-contents-list__like-1" -->
+					<!-- 							src="commuContentsList/like-1.png"> -->
+					<!-- 					</button> -->
 
 					<!--              좋아요 수  -->
-<%-- 					<div class="commu-contents-list___25" id="bodyLikeCount"><%=commuDTO.getLike_cnt()%></div> --%>
- 
+					<%-- 					<div class="commu-contents-list___25" id="bodyLikeCount"><%=commuDTO.getLike_cnt()%></div> --%>
+
 					<%
 					if (id != null) {
 						//if (id.equals(memberDTO.getId())) {
@@ -196,13 +189,13 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 					}
 					%>
 					<!--             댓글 -->
-<%-- 					<div id="commentNum" class="commu-contents-list___3"><%=commuDTO.getComment_cnt()%></div> --%>
+					<%-- 					<div id="commentNum" class="commu-contents-list___3"><%=commuDTO.getComment_cnt()%></div> --%>
 
-<!-- 					           댓글 이미지 -->
-<!-- 					<button type="button" id="bodycomment"> -->
-<!-- 						<img class="commu-contents-list__text-box-1" -->
-<!-- 							src="commuContentsList/text-box-1.png" /> -->
-<!-- 					</button> -->
+					<!-- 					           댓글 이미지 -->
+					<!-- 					<button type="button" id="bodycomment"> -->
+					<!-- 						<img class="commu-contents-list__text-box-1" -->
+					<!-- 							src="commuContentsList/text-box-1.png" /> -->
+					<!-- 					</button> -->
 				</div>
 
 			</form>
@@ -219,7 +212,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				if (pageDTO.getStartPage() > pageDTO.getPageBlock()) {
 				%>
 				<a
-					href="commuContentsListSearch.commu?pageNum=<%=pageDTO.getStartPage() - pageDTO.getPageBlock()%>&search=<%=pageDTO.getSearch()%>&searchtype=<%=pageDTO.getSearchType() %>">Prev</a>
+					href="commuContentsListSearch.commu?pageNum=<%=pageDTO.getStartPage() - pageDTO.getPageBlock()%>&search=<%=pageDTO.getSearch()%>&searchtype=<%=pageDTO.getSearchType()%>">Prev</a>
 				<%
 }
 %>
@@ -229,7 +222,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				%>
 				<div class="commu-contents-list__item your-button-class">
 					<a
-						href="commuContentsListSearch.commu?pageNum=<%=i%>&search=<%=pageDTO.getSearch	()%>&searchtype=<%=pageDTO.getSearchType() %>"
+						href="commuContentsListSearch.commu?pageNum=<%=i%>&search=<%=pageDTO.getSearch()%>&searchtype=<%=pageDTO.getSearchType()%>"
 						class="commu-contents-list__item your-button-class"><%=i%></a>
 				</div>
 				<%
@@ -241,7 +234,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				if (pageDTO.getEndPage() < pageDTO.getPageCount()) {
 				%>
 				<a
-					href="commuContentsListSearch.commu?pageNum=<%=pageDTO.getStartPage() + pageDTO.getPageBlock()%>&search=<%=pageDTO.getSearch()%>&searchtype=<%=pageDTO.getSearchType() %>">Next</a>
+					href="commuContentsListSearch.commu?pageNum=<%=pageDTO.getStartPage() + pageDTO.getPageBlock()%>&search=<%=pageDTO.getSearch()%>&searchtype=<%=pageDTO.getSearchType()%>">Next</a>
 				<%
 }
 %>

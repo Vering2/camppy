@@ -84,12 +84,12 @@
 }
 
 .likeList2 {
-width: 72vw;
-height: 0vw;
-border-bottom: solid;
-border-width: thin;
-left: 13.3vw;
-position: relative;
+	width: 72vw;
+	height: 0vw;
+	border-bottom: solid;
+	border-width: thin;
+	left: 13.3vw;
+	position: relative;
 }
 
 .likeListPhoto {
@@ -121,7 +121,8 @@ position: relative;
 	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
 	position: relative;
 	left: 17vw;
-	top: -13vw; width : 46.8750vw;
+	top: -13vw;
+	width: 46.8750vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -134,7 +135,8 @@ position: relative;
 	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
 	position: relative;
 	left: 17vw;
-	top: -12.5vw; width : 46.8750vw;
+	top: -12.5vw;
+	width: 46.8750vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -147,7 +149,8 @@ position: relative;
 	font: 400 1.5628vw/2.3436vw "NanumGothic", sans-serif;
 	position: relative;
 	left: 17vw;
-	top: -12vw; width : 46.8750vw;
+	top: -12vw;
+	width: 46.8750vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -203,7 +206,6 @@ position: relative;
 	justify-content: center;
 	left: 70.9vw;
 	top: -19vw;
-	
 }
 
 .eachCheckbox {
@@ -227,8 +229,6 @@ position: relative;
 	left: 72.5vw;
 	top: 17vw;
 }
-
-
 
 .mypageProfile {
 	padding: 0.5208vw 5.2083vw 0.5208vw 5.2083vw;
@@ -526,13 +526,11 @@ div.tab.active {
 	align-items: center;
 }
 
-
 .pagination {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 1.5vw;
-	
 }
 
 .pagination a {
@@ -551,7 +549,6 @@ div.tab.active {
 	background-color: #4da285;
 	color: white;
 }
-
 
 .pagination a:hover {
 	background-color: #333;

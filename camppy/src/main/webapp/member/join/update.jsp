@@ -13,24 +13,15 @@
     <link rel="stylesheet" href="member/join/update.css" />
 
     <style>
-      a,
-      button,
-      input,
-      select,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5, 
-      * {
-        margin: 0;
-        padding: 0;
-        border: none;
-        text-decoration: none;
-        appearance: none;
-        background: none;
-      }
-    </style>
+a, button, input, select, h1, h2, h3, h4, h5, * {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	appearance: none;
+	background: none;
+}
+</style>
     <script type="text/javascript" 
         src="script/jquery-3.7.0.js"></script>
 <script type="text/javascript">

@@ -60,10 +60,11 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 					String id = (String) session.getAttribute("id");
 					CommuDTO commuDTO = (CommuDTO) request.getAttribute("commudDTO");
 					%>
-					
-					<input type="hidden" name="post_id" value="<%=commuDTO.getPost_id()%>">
-					<input type="text" class="_2" value="<%=commuDTO.getTitle()%>"
-						name="title" onfocus="clearDefaultText(this);"
+
+					<input type="hidden" name="post_id"
+						value="<%=commuDTO.getPost_id()%>"> <input type="text"
+						class="_2" value="<%=commuDTO.getTitle()%>" name="title"
+						onfocus="clearDefaultText(this);"
 						onblur="restoreDefaultText(this);">
 
 					<textarea class="bb" name="content" style="resize: none;"><%=commuDTO.getContent()%></textarea>
@@ -74,9 +75,9 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 						src="./commuUpdate/free-icon-image-8191595-1.png" alt="이미지">
 
 					</label> <input type="file" name="uploadFile" id="image-upload"
-						style="display: none;">
-				    <input type="hidden"
-						name="oldfile" id="image-upload" value="<%=commuDTO.getImg_url()%>">
+						style="display: none;"> <input type="hidden"
+						name="oldfile" id="image-upload"
+						value="<%=commuDTO.getImg_url()%>">
 
 				</div>
 				<div class="body-button">

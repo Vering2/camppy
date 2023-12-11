@@ -608,8 +608,6 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 /* 	border-radius: 0.2604vw; */
 /* 	border: none; */
 /* } */
-
-
 div.tab.active {
 	color: black;
 	font-weight: bold;
@@ -681,7 +679,6 @@ div.tab.active {
 /* 	background-color: #333; */
 /* 	color: #fff; */
 /* } */
-
 #tab3 {
 	color: lightseagreen;
 }

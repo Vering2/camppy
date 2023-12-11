@@ -129,8 +129,9 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 	<!-- 헤더들어가는 곳 -->
 
 	<div class="mypageProfile">
-		<img class="mypageUserIcon" src="memberimg/<%=memberDTO.getMember_img() %>" />
-		<div class="profileNickname"><%=memberDTO.getNick() %></div>
+		<img class="mypageUserIcon"
+			src="memberimg/<%=memberDTO.getMember_img()%>" />
+		<div class="profileNickname"><%=memberDTO.getNick()%></div>
 		<button type="button" onclick="location.href = 'update.me'"
 			class="updateButton">
 			<div class="updateProfile">프로필수정</div>
@@ -139,7 +140,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 			<div class="myArticle">작성글</div>
 			<div class="myArticleNum"><%=commuDAO.myCountids(memberid)%></div>
 			<div class="myReply">댓글</div>
-			<div class="myReplyNum"><%=commuDAO.myCountrv(memberid) %></div>
+			<div class="myReplyNum"><%=commuDAO.myCountrv(memberid)%></div>
 		</div>
 	</div>
 	<div class="mypageNavi">
@@ -173,32 +174,32 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 				commuDTO = myCommuList.get(i);
 			%>
 			<div class="likeList">
-				
-					<%
-					if (commuDTO.getImg_url() != null) {
-					%>
-					<img class="likeListPhoto" src="upload/<%=commuDTO.getImg_url()%>" />
-					<%
-					} else {
-					%>
-					<img class="likeListPhoto" src="upload/5.png" />
-					<%
-					}
-					%>
 
-					<div class="likeListAdd">
-						회원번호:<%=commuDTO.getMember_id()%></div>
-					<div class="likeListTitle">
-						제목 :<%=commuDTO.getTitle()%></div>
-					<div class="likeListTag">
-						내용 :<%=commuDTO.getContent()%></div>
-					<!-- 					<div class="likeListTell">전화번호</div> -->
+				<%
+				if (commuDTO.getImg_url() != null) {
+				%>
+				<img class="likeListPhoto" src="upload/<%=commuDTO.getImg_url()%>" />
+				<%
+				} else {
+				%>
+				<img class="likeListPhoto" src="upload/5.png" />
+				<%
+				}
+				%>
 
-					
-						<img src="myContentsList/like-1.png" class=hearts>
-						<div class="likeNum"><%=commuDTO.getLike_cnt()%></div>
-					
-				
+				<div class="likeListAdd">
+					회원번호:<%=commuDTO.getMember_id()%></div>
+				<div class="likeListTitle">
+					제목 :<%=commuDTO.getTitle()%></div>
+				<div class="likeListTag">
+					내용 :<%=commuDTO.getContent()%></div>
+				<!-- 					<div class="likeListTell">전화번호</div> -->
+
+
+				<img src="myContentsList/like-1.png" class=hearts>
+				<div class="likeNum"><%=commuDTO.getLike_cnt()%></div>
+
+
 				<!-- 			  //선택삭제 -->
 
 				<div class="eachCheck">
@@ -235,7 +236,7 @@ a, button, input, select, h1, h2, h3, h4, h5, * {
 		<%
 		}
 		%>
- 
+
 
 		<%
 		// 끝페이지번호 전체페이지수 비교 -> 전체페이지수 클 때 -> Next 보임

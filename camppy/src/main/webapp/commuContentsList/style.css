@@ -1,11 +1,11 @@
-
 @font-face {
-    font-family: 'Pretendard-medium';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Pretendard-medium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
-
 
 .commu-contents-list, .commu-contents-list * {
 	box-sizing: border-box;
@@ -133,9 +133,8 @@
 	height: 13.5938vw;
 	position: relative;
 	border-radius: 2.0833vw;
-    border: solid black;
-    border-width: thin;
-	
+	border: solid black;
+	border-width: thin;
 }
 
 .commu-contents-list__user {
@@ -151,10 +150,9 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-    top: -0.2083vw;
-    left: 3.6458vw;
+	top: -0.2083vw;
+	left: 3.6458vw;
 }
-
 
 .commu-contents-list__free-icon-user-8484069-3 {
 	flex-shrink: 0;
@@ -164,8 +162,6 @@
 	left: 1.5703vw;
 	top: 14.0547vw;
 }
-
-
 
 .commu-contents-list___51 {
 	color: #000000;
@@ -212,10 +208,9 @@
 	height: 15.5589vw;
 	position: relative;
 	border-radius: 3.1250vw;
-    border: solid;
-    border-width: thin;
+	border: solid;
+	border-width: thin;
 }
-
 
 .commu-contents-list__free-icon-user-8484069-2 {
 	flex-shrink: 0;
@@ -292,10 +287,9 @@
 	height: 15.5589vw;
 	position: relative;
 	border-radius: 3.1250vw;
-    border: solid;
-    border-width: thin;
+	border: solid;
+	border-width: thin;
 }
-
 
 .commu-contents-list___512 {
 	color: #000000;
@@ -374,10 +368,9 @@
 	height: 15.5589vw;
 	position: relative;
 	border-radius: 3.1250vw;
-    border: solid;
-    border-width: thin;
+	border: solid;
+	border-width: thin;
 }
-
 
 .commu-contents-list__user3 {
 	color: #000000;
@@ -592,158 +585,157 @@
 }
 
 .commu-contents-list__contents-1 {
- background: ghostwhite;
-    position: relative;
-    left: 9.4792vw;
-    top: 43.1771vw;
-    width: 73.2292vw;
-    height: 33.8542vw;
-    margin-top: 0.5208vw;
-    margin-bottom: 2.6563vw;
-    margin-left: 2.7604vw;
-    margin-right: 0.5208vw;
+	background: ghostwhite;
+	position: relative;
+	left: 9.4792vw;
+	top: 43.1771vw;
+	width: 73.2292vw;
+	height: 33.8542vw;
+	margin-top: 0.5208vw;
+	margin-bottom: 2.6563vw;
+	margin-left: 2.7604vw;
+	margin-right: 0.5208vw;
 }
 
 .commu-contents-list___00 {
-color: #000000;
-    text-align: center;
-    font: 800 1.6594vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 2.2vw;
-    width: 50vw;
-    height: 4.8193vw;
-    display: flex;
-    align-items: center;
-    justify-content: initial;
+	color: #000000;
+	text-align: center;
+	font: 800 1.6594vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 2.2vw;
+	width: 50vw;
+	height: 4.8193vw;
+	display: flex;
+	align-items: center;
+	justify-content: initial;
 }
 
 .commu-contents-list__free-icon-user-8484069-12 {
 	width: 1.7641vw;
-    height: 1.7120vw;
-    position: relative;
-    left: 2.1781vw;
+	height: 1.7120vw;
+	position: relative;
+	left: 2.1781vw;
 }
-	
 
 .commu-contents-list__user-1 {
-color: #000000;
-    text-align: left;
-    font: 400 1.5557vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 3.9432vw;
-    width: 5.0328vw;
-    height: 2.2917vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1.5625vw;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    top: -2.1354vw;
+	color: #000000;
+	text-align: left;
+	font: 400 1.5557vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 3.9432vw;
+	width: 5.0328vw;
+	height: 2.2917vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1.5625vw;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	top: -2.1354vw;
 }
 
-
 .commu-contents-list__5 {
-	    color: #000000;
-    text-align: left;
-    font: 400 1.0375vw/1.1411vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 2.3859vw;
-    width: 68.9307vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 5.2604vw;
-    top: -1.6667vw;
+	color: #000000;
+	text-align: left;
+	font: 400 1.0375vw/1.1411vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 2.3859vw;
+	width: 68.9307vw;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 5.2604vw;
+	top: -1.6667vw;
 }
 
 .commu-contents-list___002 {
-width: 67.9901vw;
-    height: 15.9214vw;
-    position: relative;
-    left: 2.2792vw;
-    top: -1.0417vw;
+	width: 67.9901vw;
+	height: 15.9214vw;
+	position: relative;
+	left: 2.2792vw;
+	top: -1.0417vw;
 }
 
 .commu-contents-list__like-1 {
-	    width: 1.3344vw;
-    height: 1.4005vw;
-    position: relative;
-    left: -65.6771vw;
-    bottom: -1.4583vw;
+	width: 1.3344vw;
+	height: 1.4005vw;
+	position: relative;
+	left: -65.6771vw;
+	bottom: -1.4583vw;
 }
 
 .commu-contents-list___25 {
 	color: #000000;
-    text-align: center;
-    font: 400 1.2964vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 4.2583vw;
-    width: 1.8557vw;
-    height: 1.1927vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	text-align: center;
+	font: 400 1.2964vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 4.2583vw;
+	width: 1.8557vw;
+	height: 1.1927vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .commu-contents-list___12 {
 	color: #000000;
-    text-align: center;
-    font: 400 1.4005vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 62.9615vw;
-    width: 4.5120vw;
-    height: 2.1302vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -0.7813vw;
+	text-align: center;
+	font: 400 1.4005vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 62.9615vw;
+	width: 4.5120vw;
+	height: 2.1302vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -0.7813vw;
 }
-.commu-contents-list___12:hover{
-	color:red;
-  cursor: pointer; 
+
+.commu-contents-list___12:hover {
+	color: red;
+	cursor: pointer;
 }
 
 .commu-contents-list___13 {
 	color: #000000;
-    text-align: center;
-    font: 400 1.4526vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 67.6859vw;
-    width: 3.7307vw;
-    height: 2.4948vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -3.1771vw;
+	text-align: center;
+	font: 400 1.4526vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 67.6859vw;
+	width: 3.7307vw;
+	height: 2.4948vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -3.1771vw;
 }
 
-.commu-contents-list___13:hover{
-	color:red;
-  cursor: pointer; 
+.commu-contents-list___13:hover {
+	color: red;
+	cursor: pointer;
 }
 
 .commu-contents-list___3 {
-	    color: #000000;
-    text-align: center;
-    font: 400 1.2964vw/0.9333vw "Pretendard-medium", sans-serif;
-    position: relative;
-    left: 8.2495vw;
-    width: 2.1755vw;
-    height: 1.3490vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -5.8854vw;
+	color: #000000;
+	text-align: center;
+	font: 400 1.2964vw/0.9333vw "Pretendard-medium", sans-serif;
+	position: relative;
+	left: 8.2495vw;
+	width: 2.1755vw;
+	height: 1.3490vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -5.8854vw;
 }
 
 .commu-contents-list__text-box-1 {
 	width: 1.5047vw;
-    height: 1.6089vw;
-    position: relative;
-    left: 6.7422vw;
-    top: -7.4479vw;
+	height: 1.6089vw;
+	position: relative;
+	left: 6.7422vw;
+	top: -7.4479vw;
 }
 
 .commu-contents-list__contents-2 {
@@ -972,7 +964,6 @@ width: 67.9901vw;
 /* 	left: 18.9297vw; */
 /* 	top: 155.8990vw; */
 /* } */
-
 .commu-contents-list__list {
 	padding: 0.0521vw 17.1667vw 0.0521vw 17.1667vw;
 	display: flex;
@@ -984,7 +975,6 @@ width: 67.9901vw;
 	height: 3.3708vw;
 	position: relative;
 	overflow: hidden;
-	
 }
 
 .commu-contents-list__item-link-btn-pre-00-png {
@@ -1158,9 +1148,9 @@ width: 67.9901vw;
 	font: 700 1.2151vw "Pretendard-medium", sans-serif;
 }
 
-.button-insert:hover{
-	color:white;
-  cursor: pointer; 
+.button-insert:hover {
+	color: white;
+	cursor: pointer;
 }
 
 .commu-contents-list__list {
@@ -1191,5 +1181,3 @@ width: 67.9901vw;
 	background-color: #333;
 	color: #fff;
 }
-
-

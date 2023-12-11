@@ -39,7 +39,7 @@ public class CommuService {
 			System.out.println(uploadPath);
 
 			int maxSize = 10 * 1024 * 1024;
- 
+
 			MultipartRequest multi = new MultipartRequest(request, uploadPath, maxSize, "utf-8",
 					new DefaultFileRenamePolicy());
 
@@ -49,8 +49,6 @@ public class CommuService {
 			Timestamp last_modified_date = new Timestamp(System.currentTimeMillis());
 			String created_by = multi.getParameter("created_by");
 			String last_modified_by = multi.getParameter("last_modified_by");
-//			int comment_cnt = Integer.parseInt(multi.getParameter("comment_cnt"));
-//			int like_cnt = Integer.parseInt(multi.getParameter("like_cnt"));
 			String post_type = multi.getParameter("post_type");
 			int member_id = memberDTO.getMember_id();
 
@@ -63,8 +61,7 @@ public class CommuService {
 			commuDTO.setLast_modified_date(last_modified_date);
 			commuDTO.setCreated_by(created_by);
 			commuDTO.setLast_modified_by(last_modified_by);
-//			commuDTO.setComment_cnt(comment_cnt);
-//			commuDTO.setLike_cnt(like_cnt);
+
 			commuDTO.setPost_type(post_type);
 			commuDTO.setMember_id(member_id);
 			commuDTO.setImg_url(img_url);
@@ -72,15 +69,7 @@ public class CommuService {
 			commuDAO = new CommuDAO();
 
 			commuDAO.commuInsert(commuDTO);
-			commuDAO.commuInsert1(commuDTO,commuDAO.getpostid());
-
-			/*
-			 * commuDTO.setCreate_date(last_modified_date); commuDTO.setPost_id(post_id); //
-			 * commuDTO.setMember_id(member_id);
-			 * commuDTO.setLast_modified_date(last_modified_date);
-			 * commuDTO.setCreated_by(created_by);
-			 * commuDTO.setLast_modified_by(last_modified_by); commuDTO.setImg_url(img_url);
-			 */
+			commuDAO.commuInsert1(commuDTO, commuDAO.getpostid());
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -224,9 +213,6 @@ public class CommuService {
 			HttpSession session = request.getSession();
 			String id = (String) session.getAttribute("id");
 
-//			memberService = new MemberService();
-//			MemberDTO memberDTO = memberService.getMember(id);
-
 			request.setCharacterEncoding("utf-8");
 
 			String uploadPath = request.getRealPath("/uploadFile");
@@ -253,8 +239,6 @@ public class CommuService {
 
 			String post_type = multi.getParameter("post_type");
 
-//			int member_id = memberDTO.getMember_id();
-
 			String img_url = multi.getFilesystemName("img_url");
 
 			if (img_url == null) {
@@ -272,8 +256,6 @@ public class CommuService {
 			commuDTO.setLast_modified_by(last_modified_by);
 			commuDTO.setPost_type(post_type);
 
-//			commuDTO.setMember_id(member_id);
-
 			commuDTO.setImg_url(img_url);
 
 			commuDAO = new CommuDAO();
@@ -287,55 +269,48 @@ public class CommuService {
 
 	public void insertLike(HttpServletRequest request) {
 		System.out.println("commuService insertLike()");
-		try {	
-			int member_id =Integer.parseInt(request.getParameter("member_id")); 
-			int post_id =Integer.parseInt(request.getParameter("post_id"));
-			System.out.println("멤버아이디테스트"+member_id);
-			System.out.println("포스트아이디테스트"+post_id);
-			/* int camp_like_id =Integer.parseInt(request.getParameter("camp_like_id")); */		
+		try {
+			int member_id = Integer.parseInt(request.getParameter("member_id"));
+			int post_id = Integer.parseInt(request.getParameter("post_id"));
+			System.out.println("멤버아이디테스트" + member_id);
+			System.out.println("포스트아이디테스트" + post_id);
 			CommuDTO commuDTO = new CommuDTO();
 			commuDTO.setMember_id(member_id);
 			commuDTO.setPost_id(post_id);
-			/* likeDTO.setCamp_like_id(camp_like_id); */
 
 			// ReserveDetailDAO 객체생성
 			commuDAO = new CommuDAO();
 			// reserveDetailDTO = reserveDetailDTO() 메서드 호출
 			commuDAO.insertLike(commuDTO);
-			
-			/* int likeId=likeDAO.getMaxLikeId() +1; */
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public void deleteLike(HttpServletRequest request) {
 		System.out.println("commuService deleteLike()");
-		try {		
-			 int member_id =Integer.parseInt(request.getParameter("member_id"));
-			 int post_id =Integer.parseInt(request.getParameter("post_id"));
-			 System.out.println("멤버아이디테스트"+member_id);
-			 System.out.println("포스트아이디테스트"+post_id);
-			
-			/* int camp_like_id =Integer.parseInt(request.getParameter("camp_like_id")); */		
+		try {
+			int member_id = Integer.parseInt(request.getParameter("member_id"));
+			int post_id = Integer.parseInt(request.getParameter("post_id"));
+			System.out.println("멤버아이디테스트" + member_id);
+			System.out.println("포스트아이디테스트" + post_id);
+
 			CommuDTO commuDTO = new CommuDTO();
 			commuDTO.setMember_id(member_id);
 			commuDTO.setPost_id(post_id);
-			/* likeDTO.setCamp_like_id(camp_like_id); */
 
 			// ReserveDetailDAO 객체생성
 			commuDAO = new CommuDAO();
 			// reserveDetailDTO = reserveDetailDTO() 메서드 호출
 			commuDAO.deleteLike(commuDTO);
-			
-			/* int likeId=likeDAO.getMaxLikeId() +1; */
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 	////////////////////////////////////////////////////////////////////////////////
 	// post안에 있는 목록을 가져 오는 기능
 	public List<CommuDTO> getmyCommuList(PageDTO pageDTO) {
@@ -351,7 +326,7 @@ public class CommuService {
 			// pageDTO 저장 startRow, endRow
 			pageDTO.setStartRow(startRow);
 			pageDTO.setEndRow(endRow);
-           
+
 			// LikeDAO 객체 생성
 			commuDAO = new CommuDAO();
 			// likeList = likeDAO.getLikeList() 메서드 호출
@@ -393,28 +368,19 @@ public class CommuService {
 	public void myContentsListDelete(HttpServletRequest request) {
 		System.out.println("CommuService myContentsListDelete()");
 		try {
-			int post_id =Integer.parseInt(request.getParameter("post_id"));
-//			int post_image_id=Integer.parseInt(request.getParameter("post_image_id"));
+			int post_id = Integer.parseInt(request.getParameter("post_id"));
 			System.out.println(post_id);
-//			System.out.println(post_image_id);
-			
+
 			CommuDTO commuDTO = new CommuDTO();
 			commuDTO.setPost_id(post_id);
-//			commuDTO.setPost_image_id(post_image_id);
-			
+
 			commuDAO = new CommuDAO();
 			commuDAO.myContentsListDelete(commuDTO);
-				
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
-
-	
-
-	
-
-	
 
 }

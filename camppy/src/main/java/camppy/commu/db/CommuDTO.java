@@ -3,55 +3,37 @@ package camppy.commu.db;
 import java.sql.Timestamp;
 
 public class CommuDTO {
-  //post:커뮤니티  
-  private int post_id;//커뮤니티 아이디 
-  private Timestamp create_date;//작성날짜 
-  private Timestamp last_modified_date;//수정날
-  private String created_by;//생성자 
-  private String last_modified_by;//마지막 수정자 
-  private int comment_cnt;//댓글개수 
-  private String content;//글 내용 
-  private int like_cnt;//좋아요 개수
-  private String post_type;//게시글 종류 ㅁ
-  private String title;//제목
-  private int member_id;//회원아이디
-  
-  //post_image:커뮤니티 사진 
-  private int post_image_id;//커뮤니티 사진 아이디 
-  private Timestamp created_date;//작성날짜 
-//  private int post_id;//게시글 아이디 
-//  private String member_id; //회원아이디 
-//  private Timestamp last_modified_date;//수정날짜
-//  private String created_by;//작성자 
-  private String last_modified_id;//마지막 수정
-  private String img_url;//커뮤니티사진주
-  
- 
-  //post_like:커뮤니티 좋아요
-  private String post_like_id;//커뮤니티 좋아요 아이
-//  private String member_id;//회원 아이디 
-//  private String post_id;//게시글 아이
-  
-  
-    //comment:댓글 
-    private String commnet_id;//댓글아이디 
-//  private String created_date;//작성날짜 
-//  private String last_modified_date;//수정날짜 
-//  private String created_by;//생성자 
-//  private String last_modified_by;//마지막 수정자 
-//  private String member_id;//회원 아이디 
-//  private String post_id;//게시글 아이디 
-//  private String content;//내
-//  private String like_cnt;//댓글 좋아요 
-  
-  //comment_like:댓글 좋아요 
-	private String comment_like_id; //댓글 좋아요 아이디
-//  private String member_id;//회원아이
-//  private String comment_id;//댓글아이
-	
+	// post:커뮤니티
+	private int post_id;// 커뮤니티 아이디
+	private Timestamp create_date;// 작성날짜
+	private Timestamp last_modified_date;// 수정날
+	private String created_by;// 생성자
+	private String last_modified_by;// 마지막 수정자
+	private int comment_cnt;// 댓글개수
+	private String content;// 글 내용
+	private int like_cnt;// 좋아요 개수
+	private String post_type;// 게시글 종류 ㅁ
+	private String title;// 제목
+	private int member_id;// 회원아이디
+
+	// post_image:커뮤니티 사진
+	private int post_image_id;// 커뮤니티 사진 아이디
+	private Timestamp created_date;// 작성날짜
+
+	private String last_modified_id;// 마지막 수정
+	private String img_url;// 커뮤니티사진주
+
+	private String post_like_id;// 커뮤니티 좋아요 아이
+
+	// comment:댓글
+	private String commnet_id;// 댓글아이디
+
+	// comment_like:댓글 좋아요
+	private String comment_like_id; // 댓글 좋아요 아이디
+
 	private String nickname;
-	
-    public int getPost_id() {
+
+	public int getPost_id() {
 		return post_id;
 	}
 
@@ -147,8 +129,6 @@ public class CommuDTO {
 		this.post_image_id = post_image_id;
 	}
 
-
-
 	public String getLast_modified_id() {
 		return last_modified_id;
 	}
@@ -205,15 +185,4 @@ public class CommuDTO {
 		this.created_date = created_date;
 	}
 
-	
 }
-
-
-  
-
-  
-  
-  
-  
-  
-  

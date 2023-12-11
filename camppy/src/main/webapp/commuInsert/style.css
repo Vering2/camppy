@@ -1,10 +1,11 @@
 @font-face {
-    font-family: 'Pretendard-medium';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Pretendard-medium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+		format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
-
 
 .commu-insert, .commu-insert * {
 	box-sizing: border-box;
@@ -121,13 +122,13 @@
 	height: 4.3359vw;
 	position: absolute;
 	left: 11.9792vw;
-	top: 42.5000vw0.0000vw;
-	border-radius:0.5208vw;
+	top: 42.5000vw0 .0000vw;
+	border-radius: 0.5208vw;
 }
 
 .commu-insert__free-icon-image-8191595-123 {
 	opacity: 3.3;
-	width: 3.6859vw0.0000vw;
+	width: 3.6859vw0 .0000vw;
 	height: 1.5755vw;
 	position: absolute;
 	left: 5.7865vw;
@@ -198,13 +199,13 @@
 
 .commu-insert__body-button {
 	display: flex;
-    flex-direction: row;
-    gap: 46.3573vw;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    left: 2.6042vw;
-    top: 51.0917vw;
+	flex-direction: row;
+	gap: 46.3573vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+	position: absolute;
+	left: 2.6042vw;
+	top: 51.0917vw;
 }
 
 .commu-insert__button-exit {
@@ -238,21 +239,21 @@
 
 .commu-insert__button-insert {
 	cursor: pointer !important;
-background: #4da385;
-    border-radius: 0.2552vw;
-    padding: 1.1219vw 3.2130vw 1.1219vw 3.2130vw;
-    display: flex;
-    flex-direction: row;
-    gap: 0.5099vw;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 10.6250vw;
-    height: 4.0625vw;
-    position: absolute;
-    left: 51.2563vw;
-    top: 0.0021vw;
-    overflow: hidden;
+	background: #4da385;
+	border-radius: 0.2552vw;
+	padding: 1.1219vw 3.2130vw 1.1219vw 3.2130vw;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5099vw;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 10.6250vw;
+	height: 4.0625vw;
+	position: absolute;
+	left: 51.2563vw;
+	top: 0.0021vw;
+	overflow: hidden;
 }
 
 .commu-insert__5 {
